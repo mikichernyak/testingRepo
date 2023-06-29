@@ -1,0 +1,12 @@
+envs {
+  envsCloud = [
+    {
+      uuid = "e9540065-f251-4b64-90e1-00ae6b03c322"
+      folderName = "Mikis Env 2"
+    },
+    {
+      uuid = "660e2ada-6ec6-468e-9b87-6ecb497df16d"
+      folderName = "Another one"
+    },
+  ]
+}
