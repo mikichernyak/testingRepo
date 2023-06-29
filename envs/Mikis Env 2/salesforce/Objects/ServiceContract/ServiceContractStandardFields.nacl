@@ -326,17 +326,17 @@ type salesforce.ServiceContract {
   salesforce.Unknown AdditionalDiscount {
     apiName = "ServiceContract.AdditionalDiscount"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown StatusIndicator {
     apiName = "ServiceContract.StatusIndicator"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

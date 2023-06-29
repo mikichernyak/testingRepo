@@ -226,6 +226,10 @@ salesforce.Layout Payment_Payment_Layout@bs {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

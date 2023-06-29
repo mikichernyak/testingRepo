@@ -72,18 +72,17 @@ type salesforce.ServiceTerritoryMember {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ServiceTerritoryId {
+  salesforce.MasterDetail ServiceTerritoryId {
     apiName = "ServiceTerritoryMember.ServiceTerritoryId"
-    label = "Territory ID"
-    _required = true
+    relationshipName = "ServiceTerritory"
     referenceTo = [
       salesforce.ServiceTerritory,
     ]
+    _required = true
+    label = "Territory ID"
     createable = true
     updateable = false
-    relationshipName = "ServiceTerritory"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup ServiceResourceId {
     apiName = "ServiceTerritoryMember.ServiceResourceId"

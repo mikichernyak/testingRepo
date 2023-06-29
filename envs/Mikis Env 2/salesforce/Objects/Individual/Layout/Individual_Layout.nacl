@@ -104,6 +104,10 @@ salesforce.Layout Individual_Individual_Layout@bs {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

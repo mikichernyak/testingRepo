@@ -63,6 +63,10 @@ salesforce.Layout ContactPointPhone_Contact_Point_Phone_Layout@bsss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

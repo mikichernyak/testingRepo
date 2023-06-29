@@ -107,33 +107,45 @@ type salesforce.ContactPointTypeConsent {
     valueSet = [
       {
         fullName = "Email"
-        default = false
-        label = "Email"
         isActive = true
+        label = "Email"
+        default = false
       },
       {
         fullName = "Phone"
-        default = false
-        label = "Phone"
         isActive = true
+        label = "Phone"
+        default = false
       },
       {
         fullName = "Web"
-        default = false
-        label = "Web"
         isActive = true
+        label = "Web"
+        default = false
       },
       {
         fullName = "Social"
-        default = false
-        label = "Social"
         isActive = true
+        label = "Social"
+        default = false
       },
       {
         fullName = "MailingAddress"
-        default = false
-        label = "Mailing Address"
         isActive = true
+        label = "Mailing Address"
+        default = false
+      },
+      {
+        fullName = "InPerson"
+        isActive = true
+        label = "In Person"
+        default = false
+      },
+      {
+        fullName = "Video"
+        isActive = true
+        label = "Video"
+        default = false
       },
     ]
     restricted = true
@@ -215,33 +227,45 @@ type salesforce.ContactPointTypeConsent {
     valueSet = [
       {
         fullName = "Email"
-        default = false
-        label = "Email"
         isActive = true
+        label = "Email"
+        default = false
       },
       {
         fullName = "Phone"
-        default = false
-        label = "Phone"
         isActive = true
+        label = "Phone"
+        default = false
       },
       {
         fullName = "Web"
-        default = false
-        label = "Web"
         isActive = true
+        label = "Web"
+        default = false
       },
       {
         fullName = "Social"
-        default = false
-        label = "Social"
         isActive = true
+        label = "Social"
+        default = false
       },
       {
         fullName = "MailingAddress"
-        default = false
-        label = "Mailing Address"
         isActive = true
+        label = "Mailing Address"
+        default = false
+      },
+      {
+        fullName = "InPerson"
+        isActive = true
+        label = "In Person"
+        default = false
+      },
+      {
+        fullName = "Video"
+        isActive = true
+        label = "Video"
+        default = false
       },
     ]
     restricted = true
@@ -269,25 +293,36 @@ type salesforce.ContactPointTypeConsent {
   salesforce.Lookup BusinessBrandId {
     apiName = "ContactPointTypeConsent.BusinessBrandId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    queryable = true
+    updateable = true
+    createable = true
+    
+    label = "Business Brand ID"
+    referenceTo = [
+      salesforce.BusinessBrand,
+    ]
+    relationshipName = "BusinessBrand"
   }
   salesforce.Lookup EngagementChannelTypeId {
     apiName = "ContactPointTypeConsent.EngagementChannelTypeId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup PartyRoleId {
     apiName = "ContactPointTypeConsent.PartyRoleId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    queryable = true
+    updateable = true
+    createable = true
+    
+    label = "Party Role ID"
+    referenceTo = [
+      salesforce.Customer,
+      salesforce.Seller,
+    ]
+    relationshipName = "PartyRole"
   }
 }

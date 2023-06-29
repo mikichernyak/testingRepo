@@ -89,15 +89,15 @@ type salesforce.ServiceTerritory {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ParentTerritoryId {
+  salesforce.Hierarchy ParentTerritoryId {
     apiName = "ServiceTerritory.ParentTerritoryId"
-    label = "Parent Territory ID"
+    relationshipName = "ParentTerritory"
     referenceTo = [
       salesforce.ServiceTerritory,
     ]
+    label = "Parent Territory ID"
     createable = true
     updateable = true
-    relationshipName = "ParentTerritory"
     queryable = true
   }
   salesforce.Lookup TopLevelTerritoryId {

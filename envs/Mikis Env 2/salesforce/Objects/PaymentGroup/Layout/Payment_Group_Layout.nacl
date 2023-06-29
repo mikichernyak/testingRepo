@@ -23,6 +23,10 @@ salesforce.Layout PaymentGroup_Payment_Group_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

@@ -483,4 +483,52 @@ type salesforce.ReturnOrder {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Summary TotalFeeAmount {
+    apiName = "ReturnOrder.TotalFeeAmount"
+    label = "Fee Subtotal"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalFeeTaxAmount {
+    apiName = "ReturnOrder.TotalFeeTaxAmount"
+    label = "Fee Subtotal Tax"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalFeeAdjustAmount {
+    apiName = "ReturnOrder.TotalFeeAdjustAmount"
+    label = "Fee Adjustments"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalFeeAdjustTaxAmount {
+    apiName = "ReturnOrder.TotalFeeAdjustTaxAmount"
+    label = "Fee Adjustments Tax"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalFeeAmtWithTax {
+    apiName = "ReturnOrder.TotalFeeAmtWithTax"
+    label = "Fee Subtotal with Tax"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalFeeAdjustAmtWithTax {
+    apiName = "ReturnOrder.TotalFeeAdjustAmtWithTax"
+    label = "Fee Adjustments with Tax"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
 }

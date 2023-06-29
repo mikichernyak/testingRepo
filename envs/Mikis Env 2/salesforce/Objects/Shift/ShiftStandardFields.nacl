@@ -218,29 +218,87 @@ type salesforce.Shift {
     updateable = true
     queryable = true
   }
-  salesforce.Unknown BackgroundColor {
+  salesforce.Text BackgroundColor {
     apiName = "Shift.BackgroundColor"
+    label = "Background Color"
     inlineHelpText = "Set a background color to highlight shifts in the schedule view."
-    trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 7
+    queryable = true
   }
   salesforce.Lookup WorkTypeGroupId {
     apiName = "Shift.WorkTypeGroupId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    queryable = true
+    updateable = true
+    createable = true
+    
+    label = "Work Type Group ID"
+    referenceTo = [
+      salesforce.WorkTypeGroup,
+    ]
+    relationshipName = "WorkTypeGroup"
   }
   salesforce.Lookup WorkTypeId {
     apiName = "Shift.WorkTypeId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    queryable = true
+    updateable = true
+    createable = true
+    
+    label = "Work Type ID"
+    referenceTo = [
+      salesforce.WorkType,
+    ]
+    relationshipName = "WorkType"
+  }
+  salesforce.Date RecurrenceEndDate {
+    apiName = "Shift.RecurrenceEndDate"
+    label = "Recurrence End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text RecurrencePattern {
+    apiName = "Shift.RecurrencePattern"
+    length = 100
+    label = "Recurrence Pattern"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Date RecurrenceStartDate {
+    apiName = "Shift.RecurrenceStartDate"
+    label = "Recurrence Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "Shift.Type"
+    valueSet = [
+      {
+        fullName = "Regular"
+        isActive = true
+        label = "Regular"
+        default = true
+      },
+      {
+        fullName = "Recurring"
+        isActive = true
+        label = "Recurring"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Type"
+    createable = true
+    updateable = true
+    queryable = true
   }
 }

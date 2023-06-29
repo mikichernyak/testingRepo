@@ -158,6 +158,10 @@ salesforce.Layout RefundLinePayment_Refund_Line_Payment_Layout@bsss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

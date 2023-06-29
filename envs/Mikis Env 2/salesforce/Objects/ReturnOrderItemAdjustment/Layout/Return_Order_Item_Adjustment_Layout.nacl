@@ -64,6 +64,10 @@ salesforce.Layout ReturnOrderItemAdjustment_Return_Order_Item_Adjustment_Layout@
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

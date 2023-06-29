@@ -35,6 +35,10 @@ salesforce.Layout DataUseLegalBasis_Data_Use_Legal_Basis_Layout@bssss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

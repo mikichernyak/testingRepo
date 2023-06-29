@@ -130,6 +130,10 @@ salesforce.Layout ReturnOrder_Return_Order_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

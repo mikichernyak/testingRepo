@@ -72,19 +72,18 @@ type salesforce.ConsumptionRate {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ConsumptionScheduleId {
+  salesforce.MasterDetail ConsumptionScheduleId {
     apiName = "ConsumptionRate.ConsumptionScheduleId"
-    label = "Consumption Schedule ID"
-    _required = true
+    inlineHelpText = "This rate is a part of of this schedule."
+    relationshipName = "ConsumptionSchedule"
     referenceTo = [
       salesforce.ConsumptionSchedule,
     ]
-    inlineHelpText = "This rate is a part of of this schedule."
+    _required = true
+    label = "Consumption Schedule ID"
     createable = true
     updateable = false
-    relationshipName = "ConsumptionSchedule"
     queryable = true
-    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "ConsumptionRate.Description"

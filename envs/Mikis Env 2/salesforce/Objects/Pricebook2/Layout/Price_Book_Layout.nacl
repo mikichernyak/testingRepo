@@ -47,6 +47,10 @@ salesforce.Layout Pricebook2_Price_Book_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

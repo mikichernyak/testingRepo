@@ -93,6 +93,8 @@ salesforce.Layout Contract_Contract_Layout@bs {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsTopToBottom"
     },

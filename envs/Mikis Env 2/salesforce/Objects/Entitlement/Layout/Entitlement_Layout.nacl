@@ -122,6 +122,18 @@ salesforce.Layout Entitlement_Entitlement_Layout@bs {
     },
     {
       fields = [
+        "CASES.CASE_NUMBER",
+        "NAME",
+        "CASES.SUBJECT",
+        "CASES.PRIORITY",
+        "CASES.CREATED_DATE",
+        "CASES.STATUS",
+        "OWNER_NAME",
+      ]
+      relatedList = "RelatedCaseList"
+    },
+    {
+      fields = [
         "CONTACT.NAME",
         "CREATEDBY_USER.NAME",
       ]

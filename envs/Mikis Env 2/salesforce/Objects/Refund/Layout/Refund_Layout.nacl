@@ -218,6 +218,10 @@ salesforce.Layout Refund_Refund_Layout@bs {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

@@ -80,6 +80,10 @@ salesforce.Layout ConsumptionSchedule_Consumption_Schedule_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

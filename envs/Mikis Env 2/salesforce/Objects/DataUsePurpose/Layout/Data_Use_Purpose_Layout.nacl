@@ -39,6 +39,10 @@ salesforce.Layout DataUsePurpose_Data_Use_Purpose_Layout@bsss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

@@ -91,6 +91,8 @@ salesforce.Layout Lead_Lead__28Marketing_29_Layout@bspps {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsTopToBottom"
     },

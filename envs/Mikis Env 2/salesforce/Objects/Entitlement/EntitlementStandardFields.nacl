@@ -75,18 +75,17 @@ type salesforce.Entitlement {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup AccountId {
+  salesforce.MasterDetail AccountId {
     apiName = "Entitlement.AccountId"
-    label = "Account ID"
-    _required = true
+    relationshipName = "Account"
     referenceTo = [
       salesforce.Account,
     ]
+    _required = true
+    label = "Account ID"
     createable = true
     updateable = true
-    relationshipName = "Account"
     queryable = true
-    trackHistory = false
   }
   salesforce.Picklist Type {
     apiName = "Entitlement.Type"
@@ -253,28 +252,32 @@ type salesforce.Entitlement {
     queryable = true
     trackHistory = false
   }
-  salesforce.Unknown RemainingWorkOrders {
+  salesforce.Number RemainingWorkOrders {
     apiName = "Entitlement.RemainingWorkOrders"
-    trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    label = "Remaining Work Orders"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
   }
   salesforce.Unknown StatusIndicator {
     apiName = "Entitlement.StatusIndicator"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
-  salesforce.Unknown WorkOrdersPerEntitlement {
+  salesforce.Number WorkOrdersPerEntitlement {
     apiName = "Entitlement.WorkOrdersPerEntitlement"
-    trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    label = "Work Orders Per Entitlement"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
   }
 }

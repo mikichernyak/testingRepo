@@ -197,33 +197,45 @@ type salesforce.PartyConsent {
     valueSet = [
       {
         fullName = "Email"
-        default = false
-        label = "Email"
         isActive = true
+        label = "Email"
+        default = false
       },
       {
         fullName = "Phone"
-        default = false
-        label = "Phone"
         isActive = true
+        label = "Phone"
+        default = false
       },
       {
         fullName = "Web"
-        default = false
-        label = "Web"
         isActive = true
+        label = "Web"
+        default = false
       },
       {
         fullName = "Social"
-        default = false
-        label = "Social"
         isActive = true
+        label = "Social"
+        default = false
       },
       {
         fullName = "MailingAddress"
-        default = false
-        label = "Mailing Address"
         isActive = true
+        label = "Mailing Address"
+        default = false
+      },
+      {
+        fullName = "InPerson"
+        isActive = true
+        label = "In Person"
+        default = false
+      },
+      {
+        fullName = "Video"
+        isActive = true
+        label = "Video"
+        default = false
       },
     ]
     restricted = true
@@ -244,41 +256,63 @@ type salesforce.PartyConsent {
   salesforce.Lookup BusinessBrandId {
     apiName = "PartyConsent.BusinessBrandId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    queryable = true
+    updateable = true
+    createable = true
+    
+    label = "Business Brand ID"
+    referenceTo = [
+      salesforce.BusinessBrand,
+    ]
+    relationshipName = "BusinessBrand"
   }
   salesforce.Unknown DoubleConsentCaptureDate {
     apiName = "PartyConsent.DoubleConsentCaptureDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown EffectiveFrom {
     apiName = "PartyConsent.EffectiveFrom"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown EffectiveTo {
     apiName = "PartyConsent.EffectiveTo"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup PartyRoleId {
     apiName = "PartyConsent.PartyRoleId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    queryable = true
+    updateable = true
+    createable = true
+    
+    label = "Party Role ID"
+    referenceTo = [
+      salesforce.Customer,
+      salesforce.Seller,
+    ]
+    relationshipName = "PartyRole"
+  }
+  salesforce.Lookup DataUsePurposeId {
+    apiName = "PartyConsent.DataUsePurposeId"
+    relationshipName = "DataUsePurpose"
+    referenceTo = [
+      salesforce.DataUsePurpose,
+    ]
+    label = "Data Use Purpose ID"
+    createable = true
+    updateable = true
+    queryable = true
   }
 }

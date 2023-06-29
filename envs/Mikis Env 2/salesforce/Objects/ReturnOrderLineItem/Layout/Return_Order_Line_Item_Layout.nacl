@@ -126,6 +126,10 @@ salesforce.Layout ReturnOrderLineItem_Return_Order_Line_Item_Layout@bssss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

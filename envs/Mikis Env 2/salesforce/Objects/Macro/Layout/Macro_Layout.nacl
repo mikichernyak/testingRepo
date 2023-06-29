@@ -35,6 +35,10 @@ salesforce.Layout Macro_Macro_Layout@bs {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   miniLayout = {

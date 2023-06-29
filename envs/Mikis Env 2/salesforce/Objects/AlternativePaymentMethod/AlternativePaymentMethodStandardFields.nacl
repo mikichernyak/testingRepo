@@ -1,53 +1,409 @@
 type salesforce.AlternativePaymentMethod {
   salesforce.Lookup AccountId {
     apiName = "AlternativePaymentMethod.AccountId"
-    _hidden_value = true
+    
+    label = "Account ID"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Account"
+    queryable = true
   }
-  string AuditEmail {
-    _hidden_value = true
+  salesforce.Email AuditEmail {
+    apiName = "AlternativePaymentMethod.AuditEmail"
+    label = "Audit Email"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
   }
-  string Comments {
-    _hidden_value = true
+  salesforce.LongTextArea Comments {
+    apiName = "AlternativePaymentMethod.Comments"
+    label = "Comments"
+    createable = true
+    updateable = true
+    length = 1000
+    queryable = true
   }
-  string CompanyName {
-    _hidden_value = true
+  salesforce.Text CompanyName {
+    apiName = "AlternativePaymentMethod.CompanyName"
+    label = "Company Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
   }
-  string Email {
-    _hidden_value = true
+  salesforce.Email Email {
+    apiName = "AlternativePaymentMethod.Email"
+    label = "Registered Email"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
   }
-  string GatewayToken {
-    _hidden_value = true
+  salesforce.EncryptedText GatewayToken {
+    apiName = "AlternativePaymentMethod.GatewayToken"
+    label = "Gateway Token"
+    createable = true
+    updateable = true
+    length = 255
+    queryable = true
   }
-  string GatewayTokenDetails {
-    _hidden_value = true
+  salesforce.LongTextArea GatewayTokenDetails {
+    apiName = "AlternativePaymentMethod.GatewayTokenDetails"
+    label = "Gateway Token Details"
+    createable = true
+    updateable = true
+    length = 1000
+    queryable = true
   }
-  string IpAddress {
-    _hidden_value = true
+  salesforce.Text IpAddress {
+    apiName = "AlternativePaymentMethod.IpAddress"
+    label = "IP Address"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 39
+    queryable = true
   }
-  string IsAutoPayEnabled {
-    _hidden_value = true
+  salesforce.Checkbox IsAutoPayEnabled {
+    apiName = "AlternativePaymentMethod.IsAutoPayEnabled"
+    label = "Auto Pay"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
   }
-  string MacAddress {
-    _hidden_value = true
+  salesforce.Text MacAddress {
+    apiName = "AlternativePaymentMethod.MacAddress"
+    label = "MAC Address"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 32
+    queryable = true
   }
-  string NickName {
-    _hidden_value = true
+  salesforce.Text NickName {
+    apiName = "AlternativePaymentMethod.NickName"
+    label = "Nickname"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "AlternativePaymentMethod.OwnerId"
     _hidden_value = true
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Owner"
+    queryable = true
   }
   salesforce.Lookup PaymentGatewayId {
     apiName = "AlternativePaymentMethod.PaymentGatewayId"
+    
+    label = "Payment Gateway ID"
+    referenceTo = [
+      salesforce.PaymentGateway,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "PaymentGateway"
+    queryable = true
+  }
+  salesforce.Phone Phone {
+    apiName = "AlternativePaymentMethod.Phone"
+    label = "Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ProcessingMode {
+    apiName = "AlternativePaymentMethod.ProcessingMode"
+    label = "Processing Mode"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Salesforce"
+        default = false
+        label = "Salesforce"
+        isActive = true
+      },
+      {
+        fullName = "External"
+        default = false
+        label = "External"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "AlternativePaymentMethod.Status"
+    label = "Status"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Active"
+        default = false
+        label = "Active"
+        isActive = true
+      },
+      {
+        fullName = "InActive"
+        default = false
+        label = "InActive"
+        isActive = true
+      },
+      {
+        fullName = "Canceled"
+        default = false
+        label = "Canceled"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "AlternativePaymentMethod.Id"
+    label = "Alternative Payment Method ID"
+    queryable = true
     _hidden_value = true
   }
-  string Phone {
+  salesforce.Checkbox IsDeleted {
+    apiName = "AlternativePaymentMethod.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
     _hidden_value = true
   }
-  string ProcessingMode {
+  salesforce.AutoNumber AlternativePaymentMethodNumber {
+    apiName = "AlternativePaymentMethod.AlternativePaymentMethodNumber"
+    label = "Alternative Payment Method Number"
+    createable = false
+    updateable = false
+    queryable = true
     _hidden_value = true
   }
-  string Status {
+  salesforce.DateTime CreatedDate {
+    apiName = "AlternativePaymentMethod.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
     _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AlternativePaymentMethod.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AlternativePaymentMethod.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AlternativePaymentMethod.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AlternativePaymentMethod.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Address PaymentMethodAddress {
+    apiName = "AlternativePaymentMethod.PaymentMethodAddress"
+    label = "Payment Method Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text PaymentMethodDetails {
+    apiName = "AlternativePaymentMethod.PaymentMethodDetails"
+    length = 255
+    label = "Payment Method Details"
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text PaymentMethodSubType {
+    apiName = "AlternativePaymentMethod.PaymentMethodSubType"
+    length = 255
+    label = "Payment Method SubType"
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist PaymentMethodType {
+    apiName = "AlternativePaymentMethod.PaymentMethodType"
+    valueSet = [
+      {
+        fullName = "AfterpayClearpay"
+        isActive = true
+        label = "Afterpay / Clearpay"
+        default = false
+      },
+      {
+        fullName = "AmericanExpress"
+        isActive = true
+        label = "American Express"
+        default = false
+      },
+      {
+        fullName = "ApplePay"
+        isActive = true
+        label = "Apple Pay"
+        default = false
+      },
+      {
+        fullName = "BanContact"
+        isActive = true
+        label = "Bancontact"
+        default = false
+      },
+      {
+        fullName = "DinersClub"
+        isActive = true
+        label = "Diners Club"
+        default = false
+      },
+      {
+        fullName = "Discover"
+        isActive = true
+        label = "Discover"
+        default = false
+      },
+      {
+        fullName = "EPS"
+        isActive = true
+        label = "Eps"
+        default = false
+      },
+      {
+        fullName = "GooglePay"
+        isActive = true
+        label = "Google Pay"
+        default = false
+      },
+      {
+        fullName = "iDeal"
+        isActive = true
+        label = "iDEAL"
+        default = false
+      },
+      {
+        fullName = "Jcb"
+        isActive = true
+        label = "Jcb"
+        default = false
+      },
+      {
+        fullName = "Klarna"
+        isActive = true
+        label = "Klarna"
+        default = false
+      },
+      {
+        fullName = "Maestro"
+        isActive = true
+        label = "Maestro"
+        default = false
+      },
+      {
+        fullName = "MasterCard"
+        isActive = true
+        label = "Master Card"
+        default = false
+      },
+      {
+        fullName = "Other"
+        isActive = true
+        label = "Other"
+        default = false
+      },
+      {
+        fullName = "PayPal"
+        isActive = true
+        label = "Paypal"
+        default = false
+      },
+      {
+        fullName = "SepaDebit"
+        isActive = true
+        label = "SEPA Debit"
+        default = false
+      },
+      {
+        fullName = "UnionPay"
+        isActive = true
+        label = "UnionPay"
+        default = false
+      },
+      {
+        fullName = "Venmo"
+        isActive = true
+        label = "Venmo"
+        default = false
+      },
+      {
+        fullName = "Visa"
+        isActive = true
+        label = "Visa"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Payment Method Type"
+    createable = true
+    updateable = true
+    queryable = true
   }
 }

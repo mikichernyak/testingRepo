@@ -174,6 +174,10 @@ salesforce.Layout Campaign_Campaign_Layout@bs {
             },
           ]
         },
+        {
+        },
+        {
+        },
       ]
       style = "CustomLinks"
     },
@@ -332,6 +336,18 @@ salesforce.Layout Campaign_Campaign_Layout@bs {
     {
       fields = [
         "CAMPAIGN.NAME",
+        "CAMPAIGN.TOTAL_NUM_LEADS",
+        "CAMPAIGN.TOT_CONVERTED_LEADS",
+        "CAMPAIGN.TOT_CONTACTS",
+        "CAMPAIGN.TOT_OPPORTUNITIES",
+        "CAMPAIGN.TOT_WON_OPPORTUNITIES",
+        "TOT_AMOUNT_WON",
+        "TOT_AMOUNT_ALL",
+        "CAMPAIGN.TOT_NUM_RESPONSES",
+        "TOT_NUM_SENT",
+        "TOT_EXP_REVENUE",
+        "TOT_BUDGETED_COST",
+        "TOT_ACTUAL_COST",
       ]
       relatedList = "RelatedCampaignHierarchyList"
     },

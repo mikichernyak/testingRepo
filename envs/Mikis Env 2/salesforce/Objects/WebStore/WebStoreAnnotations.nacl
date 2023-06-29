@@ -161,4 +161,6 @@ type salesforce.WebStore {
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
   externalSharingModel = "Private"
+  searchLayouts = {
+  }
 }

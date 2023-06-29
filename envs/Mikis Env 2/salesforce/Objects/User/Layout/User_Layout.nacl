@@ -13,6 +13,10 @@ salesforce.Layout User_User_Layout@bs {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedObjects = [

@@ -99,6 +99,8 @@ salesforce.Layout Lead_Lead_Layout@bs {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsTopToBottom"
     },

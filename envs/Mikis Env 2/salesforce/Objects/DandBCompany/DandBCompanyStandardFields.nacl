@@ -5057,1005 +5057,963 @@ type salesforce.DandBCompany {
     valueSet = [
       {
         fullName = "AED"
-        default = false
-        label = "AED - UAE Dirham"
         isActive = true
+        label = "AED - UAE Dirham"
+        default = false
       },
       {
         fullName = "AFN"
-        default = false
-        label = "AFN - Afghanistan Afghani (New)"
         isActive = true
+        label = "AFN - Afghanistan Afghani (New)"
+        default = false
       },
       {
         fullName = "ALL"
-        default = false
-        label = "ALL - Albanian Lek"
         isActive = true
+        label = "ALL - Albanian Lek"
+        default = false
       },
       {
         fullName = "AMD"
-        default = false
-        label = "AMD - Armenian Dram"
         isActive = true
+        label = "AMD - Armenian Dram"
+        default = false
       },
       {
         fullName = "ANG"
-        default = false
-        label = "ANG - Neth Antilles Guilder"
         isActive = true
+        label = "ANG - Neth Antilles Guilder"
+        default = false
       },
       {
         fullName = "AOA"
-        default = false
-        label = "AOA - Angola Kwanza"
         isActive = true
+        label = "AOA - Angola Kwanza"
+        default = false
       },
       {
         fullName = "ARS"
-        default = false
-        label = "ARS - Argentine Peso"
         isActive = true
+        label = "ARS - Argentine Peso"
+        default = false
       },
       {
         fullName = "AUD"
-        default = false
-        label = "AUD - Australian Dollar"
         isActive = true
+        label = "AUD - Australian Dollar"
+        default = false
       },
       {
         fullName = "AWG"
-        default = false
-        label = "AWG - Aruba Florin"
         isActive = true
+        label = "AWG - Aruba Florin"
+        default = false
       },
       {
         fullName = "AZN"
-        default = false
-        label = "AZN - Azerbaijan Manat"
         isActive = true
+        label = "AZN - Azerbaijan Manat"
+        default = false
       },
       {
         fullName = "BAM"
-        default = false
-        label = "BAM - Convertible Marks"
         isActive = true
+        label = "BAM - Convertible Marks"
+        default = false
       },
       {
         fullName = "BBD"
-        default = false
-        label = "BBD - Barbados Dollar"
         isActive = true
+        label = "BBD - Barbados Dollar"
+        default = false
       },
       {
         fullName = "BDT"
-        default = false
-        label = "BDT - Bangladesh Taka"
         isActive = true
+        label = "BDT - Bangladesh Taka"
+        default = false
       },
       {
         fullName = "BGN"
-        default = false
-        label = "BGN - Bulgarian Lev"
         isActive = true
+        label = "BGN - Bulgarian Lev"
+        default = false
       },
       {
         fullName = "BHD"
-        default = false
-        label = "BHD - Bahraini Dinar"
         isActive = true
+        label = "BHD - Bahraini Dinar"
+        default = false
       },
       {
         fullName = "BIF"
-        default = false
-        label = "BIF - Burundi Franc"
         isActive = true
+        label = "BIF - Burundi Franc"
+        default = false
       },
       {
         fullName = "BMD"
-        default = false
-        label = "BMD - Bermuda Dollar"
         isActive = true
+        label = "BMD - Bermuda Dollar"
+        default = false
       },
       {
         fullName = "BND"
-        default = false
-        label = "BND - Brunei Dollar"
         isActive = true
+        label = "BND - Brunei Dollar"
+        default = false
       },
       {
         fullName = "BOB"
-        default = false
-        label = "BOB - Bolivian Boliviano"
         isActive = true
+        label = "BOB - Bolivian Boliviano"
+        default = false
       },
       {
         fullName = "BOV"
-        default = false
+        isActive = true
         label = "BOV - Bolivia Mvdol"
-        isActive = true
-      },
-      {
-        fullName = "BRB"
         default = false
-        label = "BRB - Brazilian Cruzeiro (old)"
-        isActive = true
       },
       {
         fullName = "BRL"
-        default = false
-        label = "BRL - Brazilian Real"
         isActive = true
+        label = "BRL - Brazilian Real"
+        default = false
       },
       {
         fullName = "BSD"
-        default = false
-        label = "BSD - Bahamian Dollar"
         isActive = true
+        label = "BSD - Bahamian Dollar"
+        default = false
       },
       {
         fullName = "BTN"
-        default = false
-        label = "BTN - Bhutan Ngultrum"
         isActive = true
+        label = "BTN - Bhutan Ngultrum"
+        default = false
       },
       {
         fullName = "BWP"
-        default = false
-        label = "BWP - Botswana Pula"
         isActive = true
+        label = "BWP - Botswana Pula"
+        default = false
       },
       {
         fullName = "BYN"
-        default = false
-        label = "BYN - Belarusian Ruble"
         isActive = true
+        label = "BYN - Belarusian Ruble"
+        default = false
       },
       {
         fullName = "BYR"
-        default = false
-        label = "BYR - Belarusian Ruble"
         isActive = true
+        label = "BYR - Belarusian Ruble"
+        default = false
       },
       {
         fullName = "BZD"
-        default = false
-        label = "BZD - Belize Dollar"
         isActive = true
+        label = "BZD - Belize Dollar"
+        default = false
       },
       {
         fullName = "CAD"
-        default = false
-        label = "CAD - Canadian Dollar"
         isActive = true
+        label = "CAD - Canadian Dollar"
+        default = false
       },
       {
         fullName = "CDF"
-        default = false
-        label = "CDF - Franc Congolais"
         isActive = true
+        label = "CDF - Franc Congolais"
+        default = false
       },
       {
         fullName = "CHF"
-        default = false
-        label = "CHF - Swiss Franc"
         isActive = true
+        label = "CHF - Swiss Franc"
+        default = false
       },
       {
         fullName = "CLF"
-        default = false
-        label = "CLF - Unidades de fomento"
         isActive = true
+        label = "CLF - Unidades de fomento"
+        default = false
       },
       {
         fullName = "CLP"
-        default = false
+        isActive = true
         label = "CLP - Chilean Peso"
-        isActive = true
-      },
-      {
-        fullName = "CNH"
         default = false
-        label = "CNH - Chinese Yuan (Offshore)"
-        isActive = true
       },
       {
         fullName = "CNY"
-        default = false
-        label = "CNY - Chinese Yuan"
         isActive = true
+        label = "CNY - Chinese Yuan"
+        default = false
       },
       {
         fullName = "COP"
-        default = false
-        label = "COP - Colombian Peso"
         isActive = true
+        label = "COP - Colombian Peso"
+        default = false
       },
       {
         fullName = "CRC"
-        default = false
-        label = "CRC - Costa Rica Colon"
         isActive = true
+        label = "CRC - Costa Rica Colon"
+        default = false
       },
       {
         fullName = "CUC"
-        default = false
+        isActive = true
         label = "CUC - Cuban Peso Convertible"
-        isActive = true
-      },
-      {
-        fullName = "CUP"
         default = false
-        label = "CUP - Cuban Peso"
-        isActive = true
       },
       {
         fullName = "CVE"
-        default = false
-        label = "CVE - Cape Verde Escudo"
         isActive = true
+        label = "CVE - Cape Verde Escudo"
+        default = false
       },
       {
         fullName = "CZK"
-        default = false
-        label = "CZK - Czech Koruna"
         isActive = true
+        label = "CZK - Czech Koruna"
+        default = false
       },
       {
         fullName = "DJF"
-        default = false
-        label = "DJF - Dijibouti Franc"
         isActive = true
+        label = "DJF - Dijibouti Franc"
+        default = false
       },
       {
         fullName = "DKK"
-        default = false
-        label = "DKK - Danish Krone"
         isActive = true
+        label = "DKK - Danish Krone"
+        default = false
       },
       {
         fullName = "DOP"
-        default = false
-        label = "DOP - Dominican Peso"
         isActive = true
+        label = "DOP - Dominican Peso"
+        default = false
       },
       {
         fullName = "DZD"
-        default = false
-        label = "DZD - Algerian Dinar"
         isActive = true
+        label = "DZD - Algerian Dinar"
+        default = false
       },
       {
         fullName = "EEK"
-        default = false
-        label = "EEK - Estonian Kroon"
         isActive = true
+        label = "EEK - Estonian Kroon"
+        default = false
       },
       {
         fullName = "EGP"
-        default = false
-        label = "EGP - Egyptian Pound"
         isActive = true
+        label = "EGP - Egyptian Pound"
+        default = false
       },
       {
         fullName = "ERN"
-        default = false
-        label = "ERN - Eritrea Nakfa"
         isActive = true
+        label = "ERN - Eritrea Nakfa"
+        default = false
       },
       {
         fullName = "ETB"
-        default = false
-        label = "ETB - Ethiopian Birr"
         isActive = true
+        label = "ETB - Ethiopian Birr"
+        default = false
       },
       {
         fullName = "EUR"
-        default = false
-        label = "EUR - Euro"
         isActive = true
+        label = "EUR - Euro"
+        default = false
       },
       {
         fullName = "FJD"
-        default = false
-        label = "FJD - Fiji Dollar"
         isActive = true
+        label = "FJD - Fiji Dollar"
+        default = false
       },
       {
         fullName = "FKP"
-        default = false
-        label = "FKP - Falkland Islands Pound"
         isActive = true
+        label = "FKP - Falkland Islands Pound"
+        default = false
       },
       {
         fullName = "GBP"
-        default = false
-        label = "GBP - British Pound"
         isActive = true
+        label = "GBP - British Pound"
+        default = false
       },
       {
         fullName = "GEL"
-        default = false
-        label = "GEL - Georgia Lari"
         isActive = true
+        label = "GEL - Georgia Lari"
+        default = false
       },
       {
         fullName = "GHS"
-        default = false
-        label = "GHS - Ghanaian Cedi"
         isActive = true
+        label = "GHS - Ghanaian Cedi"
+        default = false
       },
       {
         fullName = "GIP"
-        default = false
-        label = "GIP - Gibraltar Pound"
         isActive = true
+        label = "GIP - Gibraltar Pound"
+        default = false
       },
       {
         fullName = "GMD"
-        default = false
-        label = "GMD - Gambian Dalasi"
         isActive = true
+        label = "GMD - Gambian Dalasi"
+        default = false
       },
       {
         fullName = "GNF"
-        default = false
-        label = "GNF - Guinean Franc"
         isActive = true
+        label = "GNF - Guinean Franc"
+        default = false
       },
       {
         fullName = "GTQ"
-        default = false
-        label = "GTQ - Guatemala Quetzal"
         isActive = true
+        label = "GTQ - Guatemala Quetzal"
+        default = false
       },
       {
         fullName = "GYD"
-        default = false
-        label = "GYD - Guyana Dollar"
         isActive = true
+        label = "GYD - Guyana Dollar"
+        default = false
       },
       {
         fullName = "HKD"
-        default = false
-        label = "HKD - Hong Kong Dollar"
         isActive = true
+        label = "HKD - Hong Kong Dollar"
+        default = false
       },
       {
         fullName = "HNL"
-        default = false
+        isActive = true
         label = "HNL - Honduras Lempira"
-        isActive = true
-      },
-      {
-        fullName = "HRD"
         default = false
-        label = "HRD - Croatian Dinar (Old)"
-        isActive = true
       },
       {
         fullName = "HRK"
-        default = false
-        label = "HRK - Kuna"
         isActive = true
+        label = "HRK - Kuna"
+        default = false
       },
       {
         fullName = "HTG"
-        default = false
-        label = "HTG - Haiti Gourde"
         isActive = true
+        label = "HTG - Haiti Gourde"
+        default = false
       },
       {
         fullName = "HUF"
-        default = false
-        label = "HUF - Hungarian Forint"
         isActive = true
+        label = "HUF - Hungarian Forint"
+        default = false
       },
       {
         fullName = "IDR"
-        default = false
-        label = "IDR - Indonesian Rupiah"
         isActive = true
+        label = "IDR - Indonesian Rupiah"
+        default = false
       },
       {
         fullName = "ILS"
-        default = false
-        label = "ILS - Israeli Shekel"
         isActive = true
+        label = "ILS - Israeli Shekel"
+        default = false
       },
       {
         fullName = "INR"
-        default = false
-        label = "INR - Indian Rupee"
         isActive = true
+        label = "INR - Indian Rupee"
+        default = false
       },
       {
         fullName = "IQD"
-        default = false
+        isActive = true
         label = "IQD - Iraqi Dinar"
-        isActive = true
-      },
-      {
-        fullName = "IRR"
         default = false
-        label = "IRR - Iranian Rial"
-        isActive = true
       },
       {
         fullName = "ISK"
-        default = false
-        label = "ISK - Iceland Krona"
         isActive = true
+        label = "ISK - Iceland Krona"
+        default = false
       },
       {
         fullName = "JMD"
-        default = false
-        label = "JMD - Jamaican Dollar"
         isActive = true
+        label = "JMD - Jamaican Dollar"
+        default = false
       },
       {
         fullName = "JOD"
-        default = false
-        label = "JOD - Jordanian Dinar"
         isActive = true
+        label = "JOD - Jordanian Dinar"
+        default = false
       },
       {
         fullName = "JPY"
-        default = false
-        label = "JPY - Japanese Yen"
         isActive = true
+        label = "JPY - Japanese Yen"
+        default = false
       },
       {
         fullName = "KES"
-        default = false
-        label = "KES - Kenyan Shilling"
         isActive = true
+        label = "KES - Kenyan Shilling"
+        default = false
       },
       {
         fullName = "KGS"
-        default = false
-        label = "KGS - Kyrgyzstan Som"
         isActive = true
+        label = "KGS - Kyrgyzstan Som"
+        default = false
       },
       {
         fullName = "KHR"
-        default = false
-        label = "KHR - Cambodia Riel"
         isActive = true
+        label = "KHR - Cambodia Riel"
+        default = false
       },
       {
         fullName = "KMF"
-        default = false
+        isActive = true
         label = "KMF - Comorian Franc"
-        isActive = true
-      },
-      {
-        fullName = "KPW"
         default = false
-        label = "KPW - North Korean Won"
-        isActive = true
       },
       {
         fullName = "KRW"
-        default = false
-        label = "KRW - Korean Won"
         isActive = true
+        label = "KRW - Korean Won"
+        default = false
       },
       {
         fullName = "KWD"
-        default = false
-        label = "KWD - Kuwaiti Dinar"
         isActive = true
+        label = "KWD - Kuwaiti Dinar"
+        default = false
       },
       {
         fullName = "KYD"
-        default = false
-        label = "KYD - Cayman Islands Dollar"
         isActive = true
+        label = "KYD - Cayman Islands Dollar"
+        default = false
       },
       {
         fullName = "KZT"
-        default = false
-        label = "KZT - Kazakhstan Tenge"
         isActive = true
+        label = "KZT - Kazakhstan Tenge"
+        default = false
       },
       {
         fullName = "LAK"
-        default = false
-        label = "LAK - Lao Kip"
         isActive = true
+        label = "LAK - Lao Kip"
+        default = false
       },
       {
         fullName = "LBP"
-        default = false
-        label = "LBP - Lebanese Pound"
         isActive = true
+        label = "LBP - Lebanese Pound"
+        default = false
       },
       {
         fullName = "LKR"
-        default = false
-        label = "LKR - Sri Lanka Rupee"
         isActive = true
+        label = "LKR - Sri Lanka Rupee"
+        default = false
       },
       {
         fullName = "LRD"
-        default = false
-        label = "LRD - Liberian Dollar"
         isActive = true
+        label = "LRD - Liberian Dollar"
+        default = false
       },
       {
         fullName = "LSL"
-        default = false
-        label = "LSL - Lesotho Loti"
         isActive = true
+        label = "LSL - Lesotho Loti"
+        default = false
       },
       {
         fullName = "LYD"
-        default = false
-        label = "LYD - Libyan Dinar"
         isActive = true
+        label = "LYD - Libyan Dinar"
+        default = false
       },
       {
         fullName = "MAD"
-        default = false
-        label = "MAD - Moroccan Dirham"
         isActive = true
+        label = "MAD - Moroccan Dirham"
+        default = false
       },
       {
         fullName = "MDL"
-        default = false
-        label = "MDL - Moldovan Leu"
         isActive = true
+        label = "MDL - Moldovan Leu"
+        default = false
       },
       {
         fullName = "MGA"
-        default = false
-        label = "MGA - Malagasy Ariary"
         isActive = true
+        label = "MGA - Malagasy Ariary"
+        default = false
       },
       {
         fullName = "MKD"
-        default = false
-        label = "MKD - Macedonian Denar"
         isActive = true
+        label = "MKD - Macedonian Denar"
+        default = false
       },
       {
         fullName = "MMK"
-        default = false
-        label = "MMK - Myanmar Kyat"
         isActive = true
+        label = "MMK - Myanmar Kyat"
+        default = false
       },
       {
         fullName = "MNT"
-        default = false
-        label = "MNT - Mongolian Tugrik"
         isActive = true
+        label = "MNT - Mongolian Tugrik"
+        default = false
       },
       {
         fullName = "MOP"
-        default = false
-        label = "MOP - Macau Pataca"
         isActive = true
+        label = "MOP - Macau Pataca"
+        default = false
       },
       {
         fullName = "MRO"
-        default = false
-        label = "MRO - Mauritanian Ougulya"
         isActive = true
+        label = "MRO - Mauritanian Ougulya"
+        default = false
       },
       {
         fullName = "MRU"
-        default = false
-        label = "MRU - Mauritanian Ougulya"
         isActive = true
+        label = "MRU - Mauritanian Ougulya"
+        default = false
       },
       {
         fullName = "MUR"
-        default = false
-        label = "MUR - Mauritius Rupee"
         isActive = true
+        label = "MUR - Mauritius Rupee"
+        default = false
       },
       {
         fullName = "MVR"
-        default = false
-        label = "MVR - Maldives Rufiyaa"
         isActive = true
+        label = "MVR - Maldives Rufiyaa"
+        default = false
       },
       {
         fullName = "MWK"
-        default = false
-        label = "MWK - Malawi Kwacha"
         isActive = true
+        label = "MWK - Malawi Kwacha"
+        default = false
       },
       {
         fullName = "MXN"
-        default = false
-        label = "MXN - Mexican Peso"
         isActive = true
+        label = "MXN - Mexican Peso"
+        default = false
       },
       {
         fullName = "MXV"
-        default = false
-        label = "MXV - Mexican Unidad de Inversion (UDI)"
         isActive = true
+        label = "MXV - Mexican Unidad de Inversion (UDI)"
+        default = false
       },
       {
         fullName = "MYR"
-        default = false
-        label = "MYR - Malaysian Ringgit"
         isActive = true
+        label = "MYR - Malaysian Ringgit"
+        default = false
       },
       {
         fullName = "MZN"
-        default = false
-        label = "MZN - Mozambique New Metical"
         isActive = true
+        label = "MZN - Mozambique New Metical"
+        default = false
       },
       {
         fullName = "NAD"
-        default = false
-        label = "NAD - Namibian Dollar"
         isActive = true
+        label = "NAD - Namibian Dollar"
+        default = false
       },
       {
         fullName = "NGN"
-        default = false
-        label = "NGN - Nigerian Naira"
         isActive = true
+        label = "NGN - Nigerian Naira"
+        default = false
       },
       {
         fullName = "NIO"
-        default = false
-        label = "NIO - Nicaragua Cordoba"
         isActive = true
+        label = "NIO - Nicaragua Cordoba"
+        default = false
       },
       {
         fullName = "NOK"
-        default = false
-        label = "NOK - Norwegian Krone"
         isActive = true
+        label = "NOK - Norwegian Krone"
+        default = false
       },
       {
         fullName = "NPR"
-        default = false
-        label = "NPR - Nepalese Rupee"
         isActive = true
+        label = "NPR - Nepalese Rupee"
+        default = false
       },
       {
         fullName = "NZD"
-        default = false
-        label = "NZD - New Zealand Dollar"
         isActive = true
+        label = "NZD - New Zealand Dollar"
+        default = false
       },
       {
         fullName = "OMR"
-        default = false
-        label = "OMR - Omani Rial"
         isActive = true
+        label = "OMR - Omani Rial"
+        default = false
       },
       {
         fullName = "PAB"
-        default = false
-        label = "PAB - Panama Balboa"
         isActive = true
+        label = "PAB - Panama Balboa"
+        default = false
       },
       {
         fullName = "PEN"
-        default = false
-        label = "PEN - Peruvian Sol"
         isActive = true
+        label = "PEN - Peruvian Sol"
+        default = false
       },
       {
         fullName = "PGK"
-        default = false
-        label = "PGK - Papua New Guinea Kina"
         isActive = true
+        label = "PGK - Papua New Guinea Kina"
+        default = false
       },
       {
         fullName = "PHP"
-        default = false
-        label = "PHP - Philippine Peso"
         isActive = true
+        label = "PHP - Philippine Peso"
+        default = false
       },
       {
         fullName = "PKR"
-        default = false
-        label = "PKR - Pakistani Rupee"
         isActive = true
+        label = "PKR - Pakistani Rupee"
+        default = false
       },
       {
         fullName = "PLN"
-        default = false
-        label = "PLN - Polish Zloty"
         isActive = true
+        label = "PLN - Polish Zloty"
+        default = false
       },
       {
         fullName = "PYG"
-        default = false
-        label = "PYG - Paraguayan Guarani"
         isActive = true
+        label = "PYG - Paraguayan Guarani"
+        default = false
       },
       {
         fullName = "QAR"
-        default = false
-        label = "QAR - Qatar Rial"
         isActive = true
+        label = "QAR - Qatar Rial"
+        default = false
       },
       {
         fullName = "RON"
-        default = false
-        label = "RON - Romanian Leu"
         isActive = true
+        label = "RON - Romanian Leu"
+        default = false
       },
       {
         fullName = "RSD"
-        default = false
-        label = "RSD - Serbian Dinar"
         isActive = true
+        label = "RSD - Serbian Dinar"
+        default = false
       },
       {
         fullName = "RUB"
-        default = false
-        label = "RUB - Russian Rouble"
         isActive = true
+        label = "RUB - Russian Rouble"
+        default = false
       },
       {
         fullName = "RWF"
-        default = false
-        label = "RWF - Rwanda Franc"
         isActive = true
+        label = "RWF - Rwanda Franc"
+        default = false
       },
       {
         fullName = "SAR"
-        default = false
-        label = "SAR - Saudi Arabian Riyal"
         isActive = true
+        label = "SAR - Saudi Arabian Riyal"
+        default = false
       },
       {
         fullName = "SBD"
-        default = false
-        label = "SBD - Solomon Islands Dollar"
         isActive = true
+        label = "SBD - Solomon Islands Dollar"
+        default = false
       },
       {
         fullName = "SCR"
-        default = false
+        isActive = true
         label = "SCR - Seychelles Rupee"
-        isActive = true
-      },
-      {
-        fullName = "SDG"
         default = false
-        label = "SDG - Sudanese Pound"
-        isActive = true
       },
       {
         fullName = "SEK"
-        default = false
-        label = "SEK - Swedish Krona"
         isActive = true
+        label = "SEK - Swedish Krona"
+        default = false
       },
       {
         fullName = "SGD"
-        default = false
-        label = "SGD - Singapore Dollar"
         isActive = true
+        label = "SGD - Singapore Dollar"
+        default = false
       },
       {
         fullName = "SHP"
-        default = false
-        label = "SHP - St Helena Pound"
         isActive = true
+        label = "SHP - St Helena Pound"
+        default = false
+      },
+      {
+        fullName = "SLE"
+        isActive = true
+        label = "SLE - Sierra Leone Leone"
+        default = false
       },
       {
         fullName = "SLL"
-        default = false
-        label = "SLL - Sierra Leone Leone"
         isActive = true
+        label = "SLL - Sierra Leone Leone"
+        default = false
       },
       {
         fullName = "SOS"
-        default = false
-        label = "SOS - Somali Shilling"
         isActive = true
+        label = "SOS - Somali Shilling"
+        default = false
       },
       {
         fullName = "SRD"
-        default = false
-        label = "SRD - Surinam Dollar"
         isActive = true
+        label = "SRD - Surinam Dollar"
+        default = false
       },
       {
         fullName = "SSP"
-        default = false
-        label = "SSP - South Sudan Pound"
         isActive = true
+        label = "SSP - South Sudan Pound"
+        default = false
       },
       {
         fullName = "STD"
-        default = false
-        label = "STD - São Tomé and Príncipe Dobra"
         isActive = true
+        label = "STD - São Tomé and Príncipe Dobra"
+        default = false
       },
       {
         fullName = "STN"
-        default = false
+        isActive = true
         label = "STN - São Tomé and Príncipe Dobra"
-        isActive = true
-      },
-      {
-        fullName = "SYP"
         default = false
-        label = "SYP - Syrian Pound"
-        isActive = true
       },
       {
         fullName = "SZL"
-        default = false
-        label = "SZL - Swaziland Lilageni"
         isActive = true
+        label = "SZL - Eswatini Lilageni"
+        default = false
       },
       {
         fullName = "THB"
-        default = false
-        label = "THB - Thai Baht"
         isActive = true
+        label = "THB - Thai Baht"
+        default = false
       },
       {
         fullName = "TJS"
-        default = false
-        label = "TJS - Tajik Somoni"
         isActive = true
+        label = "TJS - Tajik Somoni"
+        default = false
       },
       {
         fullName = "TMT"
-        default = false
-        label = "TMT - Turkmenistan New Manat"
         isActive = true
+        label = "TMT - Turkmenistan New Manat"
+        default = false
       },
       {
         fullName = "TND"
-        default = false
-        label = "TND - Tunisian Dinar"
         isActive = true
+        label = "TND - Tunisian Dinar"
+        default = false
       },
       {
         fullName = "TOP"
-        default = false
-        label = "TOP - Tonga Pa'anga"
         isActive = true
+        label = "TOP - Tonga Pa'anga"
+        default = false
       },
       {
         fullName = "TRY"
-        default = false
-        label = "TRY - Turkish Lira (New)"
         isActive = true
+        label = "TRY - Turkish Lira (New)"
+        default = false
       },
       {
         fullName = "TTD"
-        default = false
-        label = "TTD - Trinidad&Tobago Dollar"
         isActive = true
+        label = "TTD - Trinidad&Tobago Dollar"
+        default = false
       },
       {
         fullName = "TWD"
-        default = false
-        label = "TWD - Taiwan Dollar"
         isActive = true
+        label = "TWD - Taiwan Dollar"
+        default = false
       },
       {
         fullName = "TZS"
-        default = false
-        label = "TZS - Tanzanian Shilling"
         isActive = true
+        label = "TZS - Tanzanian Shilling"
+        default = false
       },
       {
         fullName = "UAH"
-        default = false
-        label = "UAH - Ukraine Hryvnia"
         isActive = true
+        label = "UAH - Ukraine Hryvnia"
+        default = false
       },
       {
         fullName = "UGX"
-        default = false
-        label = "UGX - Ugandan Shilling"
         isActive = true
+        label = "UGX - Ugandan Shilling"
+        default = false
       },
       {
         fullName = "USD"
-        default = false
-        label = "USD - U.S. Dollar"
         isActive = true
+        label = "USD - U.S. Dollar"
+        default = false
       },
       {
         fullName = "UYU"
-        default = false
-        label = "UYU - Uruguayan Peso"
         isActive = true
+        label = "UYU - Uruguayan Peso"
+        default = false
       },
       {
         fullName = "UZS"
-        default = false
-        label = "UZS - Uzbekistan Sum"
         isActive = true
+        label = "UZS - Uzbekistan Sum"
+        default = false
       },
       {
         fullName = "VEF"
-        default = false
-        label = "VEF - Venezuelan Bolivar Fuerte"
         isActive = true
+        label = "VEF - Venezuelan Bolivar Fuerte"
+        default = false
       },
       {
         fullName = "VES"
-        default = false
-        label = "VES - Venezuelan Bolívar Soberano"
         isActive = true
+        label = "VES - Venezuelan Bolívar Soberano"
+        default = false
       },
       {
         fullName = "VND"
-        default = false
-        label = "VND - Vietnam Dong"
         isActive = true
+        label = "VND - Vietnam Dong"
+        default = false
       },
       {
         fullName = "VUV"
-        default = false
-        label = "VUV - Vanuatu Vatu"
         isActive = true
+        label = "VUV - Vanuatu Vatu"
+        default = false
       },
       {
         fullName = "WST"
-        default = false
-        label = "WST - Samoa Tala"
         isActive = true
+        label = "WST - Samoa Tala"
+        default = false
       },
       {
         fullName = "XAF"
-        default = false
-        label = "XAF - CFA Franc (BEAC)"
         isActive = true
+        label = "XAF - CFA Franc (BEAC)"
+        default = false
       },
       {
         fullName = "XCD"
-        default = false
-        label = "XCD - East Caribbean Dollar"
         isActive = true
+        label = "XCD - East Caribbean Dollar"
+        default = false
       },
       {
         fullName = "XOF"
-        default = false
-        label = "XOF - CFA Franc (BCEAO)"
         isActive = true
+        label = "XOF - CFA Franc (BCEAO)"
+        default = false
       },
       {
         fullName = "XPF"
-        default = false
-        label = "XPF - Pacific Franc"
         isActive = true
+        label = "XPF - Pacific Franc"
+        default = false
       },
       {
         fullName = "YER"
-        default = false
-        label = "YER - Yemen Riyal"
         isActive = true
+        label = "YER - Yemen Riyal"
+        default = false
       },
       {
         fullName = "ZAR"
-        default = false
-        label = "ZAR - South African Rand"
         isActive = true
+        label = "ZAR - South African Rand"
+        default = false
       },
       {
         fullName = "ZMW"
-        default = false
-        label = "ZMW - Zambian Kwacha (New)"
         isActive = true
+        label = "ZMW - Zambian Kwacha (New)"
+        default = false
       },
       {
         fullName = "ZWL"
-        default = false
-        label = "ZWL - Zimbabwe Dollar"
         isActive = true
+        label = "ZWL - Zimbabwe Dollar"
+        default = false
       },
     ]
     restricted = true

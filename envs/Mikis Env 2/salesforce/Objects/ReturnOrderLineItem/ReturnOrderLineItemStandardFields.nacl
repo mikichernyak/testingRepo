@@ -72,18 +72,17 @@ type salesforce.ReturnOrderLineItem {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ReturnOrderId {
+  salesforce.MasterDetail ReturnOrderId {
     apiName = "ReturnOrderLineItem.ReturnOrderId"
-    label = "Return Order ID"
-    _required = true
+    relationshipName = "ReturnOrder"
     referenceTo = [
       salesforce.ReturnOrder,
     ]
+    _required = true
+    label = "Return Order ID"
     createable = true
     updateable = false
-    relationshipName = "ReturnOrder"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup OrderItemId {
     apiName = "ReturnOrderLineItem.OrderItemId"

@@ -92,6 +92,7 @@ type salesforce.ServiceAppointment {
     referenceTo = [
       salesforce.Account,
       salesforce.Asset,
+      salesforce.Case,
       salesforce.Lead,
       salesforce.Opportunity,
       salesforce.WorkOrder,
@@ -538,26 +539,36 @@ type salesforce.ServiceAppointment {
   salesforce.Lookup AppointmentInvitationId {
     apiName = "ServiceAppointment.AppointmentInvitationId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
-  salesforce.Unknown ApptBookingInfoUrl {
+  salesforce.LongTextArea ApptBookingInfoUrl {
     apiName = "ServiceAppointment.ApptBookingInfoUrl"
-    trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    label = "Appointment Booking URL"
+    createable = true
+    updateable = true
+    length = 4000
+    queryable = true
   }
-  salesforce.Unknown IsOffsiteAppointment {
+  salesforce.Checkbox IsOffsiteAppointment {
     apiName = "ServiceAppointment.IsOffsiteAppointment"
+    label = "Offsite Appointment"
     inlineHelpText = "Any type of work that can be done remotely."
-    trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup EngagementChannelTypeId {
+    apiName = "ServiceAppointment.EngagementChannelTypeId"
+    relationshipName = "EngagementChannelType"
+    referenceTo = [
+      salesforce.EngagementChannelType,
+    ]
+    label = "Engagement Channel Type ID"
+    createable = true
+    updateable = true
+    queryable = true
   }
 }

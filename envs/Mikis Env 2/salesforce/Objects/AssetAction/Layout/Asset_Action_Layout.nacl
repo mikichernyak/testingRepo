@@ -112,6 +112,10 @@ salesforce.Layout AssetAction_Asset_Action_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   miniLayout = {

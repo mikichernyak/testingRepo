@@ -13,6 +13,8 @@ salesforce.QuickAction Task_EditDescription@v {
           },
         ]
       },
+      {
+      },
     ]
   }
   standardLabel = "EditDescription"

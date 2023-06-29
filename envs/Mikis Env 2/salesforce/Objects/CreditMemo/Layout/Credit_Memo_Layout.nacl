@@ -27,6 +27,10 @@ salesforce.Layout CreditMemo_Credit_Memo_Layout@bss {
             },
             {
               behavior = "Edit"
+              field = salesforce.CreditMemo.field.ReferenceEntityId
+            },
+            {
+              behavior = "Edit"
               field = salesforce.CreditMemo.field.BillToContactId
             },
           ]
@@ -76,6 +80,8 @@ salesforce.Layout CreditMemo_Credit_Memo_Layout@bss {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsLeftToRight"
     },
@@ -117,6 +123,10 @@ salesforce.Layout CreditMemo_Credit_Memo_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

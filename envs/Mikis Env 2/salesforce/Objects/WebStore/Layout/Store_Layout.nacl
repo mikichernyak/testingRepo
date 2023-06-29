@@ -11,7 +11,15 @@ salesforce.Layout WebStore_Store_Layout@bs {
           layoutItems = [
             {
               behavior = "Required"
-              field = "Name"
+              field = salesforce.WebStore.field.Name
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.WebStore.field.Description
             },
           ]
         },
@@ -24,6 +32,24 @@ salesforce.Layout WebStore_Store_Layout@bs {
       editHeading = true
       label = "Localization"
       style = "TwoColumnsLeftToRight"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.WebStore.field.SupportedLanguages
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.WebStore.field.DefaultLanguage
+            },
+          ]
+        },
+      ]
     },
     {
       customLabel = false
@@ -31,12 +57,34 @@ salesforce.Layout WebStore_Store_Layout@bs {
       editHeading = true
       label = "Pricing"
       style = "TwoColumnsLeftToRight"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.WebStore.field.StrikethroughPricebookId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.WebStore.field.PricingStrategy
+            },
+          ]
+        },
+      ]
     },
     {
       customLabel = false
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

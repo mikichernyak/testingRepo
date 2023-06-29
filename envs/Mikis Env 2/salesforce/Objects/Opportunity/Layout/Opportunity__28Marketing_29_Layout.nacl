@@ -170,6 +170,10 @@ salesforce.Layout Opportunity_Opportunity__28Marketing_29_Layout@bspps {
             },
           ]
         },
+        {
+        },
+        {
+        },
       ]
       style = "CustomLinks"
     },

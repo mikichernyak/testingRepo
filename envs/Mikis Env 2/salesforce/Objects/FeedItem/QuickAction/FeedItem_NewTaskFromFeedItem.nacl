@@ -39,6 +39,8 @@ salesforce.QuickAction FeedItem_NewTaskFromFeedItem@v {
           },
         ]
       },
+      {
+      },
     ]
   }
   standardLabel = "CreateNew"

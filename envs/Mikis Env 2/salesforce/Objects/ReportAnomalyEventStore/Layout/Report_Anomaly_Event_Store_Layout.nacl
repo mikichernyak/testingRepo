@@ -56,6 +56,8 @@ salesforce.Layout ReportAnomalyEventStore_Report_Anomaly_Event_Store_Layout@bsss
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsLeftToRight"
     },
@@ -89,6 +91,10 @@ salesforce.Layout ReportAnomalyEventStore_Report_Anomaly_Event_Store_Layout@bsss
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

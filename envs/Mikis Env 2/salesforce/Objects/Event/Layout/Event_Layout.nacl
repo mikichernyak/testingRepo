@@ -124,6 +124,10 @@ salesforce.Layout Event_Event_Layout@bs {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedContent = {

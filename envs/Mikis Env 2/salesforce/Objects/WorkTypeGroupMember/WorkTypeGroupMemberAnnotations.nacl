@@ -198,5 +198,13 @@ type salesforce.WorkTypeGroupMember {
       "WorkTypeGroup",
       "WorkType",
     ]
+    lookupDialogsAdditionalFields = [
+      "WorkTypeGroup",
+      "WorkType",
+    ]
+    lookupPhoneDialogsAdditionalFields = [
+      "WorkTypeGroup",
+      "WorkType",
+    ]
   }
 }

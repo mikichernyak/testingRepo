@@ -33,6 +33,8 @@ salesforce.QuickAction Case_NewChildCase@v {
           },
         ]
       },
+      {
+      },
     ]
   }
   standardLabel = "NewChild"

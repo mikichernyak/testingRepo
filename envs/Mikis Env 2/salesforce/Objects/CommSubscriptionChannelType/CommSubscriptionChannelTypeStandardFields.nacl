@@ -117,4 +117,16 @@ type salesforce.CommSubscriptionChannelType {
     queryable = true
     trackHistory = false
   }
+  salesforce.Lookup DataUsePurposeId {
+    apiName = "CommSubscriptionChannelType.DataUsePurposeId"
+    relationshipName = "DataUsePurpose"
+    referenceTo = [
+      salesforce.CommSubscription,
+    ]
+    label = "Communication Subscription ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
 }

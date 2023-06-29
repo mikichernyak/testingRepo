@@ -175,4 +175,82 @@ type salesforce.Product2 {
     length = 180
     queryable = true
   }
+  salesforce.Picklist Type {
+    apiName = "Product2.Type"
+    valueSet = [
+      {
+        fullName = "Base"
+        isActive = true
+        label = "Base"
+        default = false
+      },
+      {
+        fullName = "Bundle"
+        isActive = true
+        label = "Bundle"
+        default = false
+      },
+      {
+        fullName = "Set"
+        isActive = true
+        label = "Set"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Product Type"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist ProductClass {
+    apiName = "Product2.ProductClass"
+    valueSet = [
+      {
+        fullName = "Simple"
+        isActive = true
+        label = "Simple"
+        default = true
+      },
+      {
+        fullName = "VariationParent"
+        isActive = true
+        label = "Variation Parent"
+        default = false
+      },
+      {
+        fullName = "Variation"
+        isActive = true
+        label = "Variation"
+        default = false
+      },
+      {
+        fullName = "Bundle"
+        isActive = true
+        label = "Bundle"
+        default = false
+      },
+      {
+        fullName = "Set"
+        isActive = true
+        label = "Set"
+        default = false
+      },
+    ]
+    restricted = true
+    _required = true
+    label = "Product Class"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup SellerId {
+    apiName = "Product2.SellerId"
+    _hidden_value = true
+  }
+  salesforce.Lookup SourceProductId {
+    apiName = "Product2.SourceProductId"
+    _hidden_value = true
+  }
 }

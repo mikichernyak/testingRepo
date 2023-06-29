@@ -253,6 +253,10 @@ salesforce.Layout Case_Case_Layout@bs {
             },
           ]
         },
+        {
+        },
+        {
+        },
       ]
       style = "CustomLinks"
     },

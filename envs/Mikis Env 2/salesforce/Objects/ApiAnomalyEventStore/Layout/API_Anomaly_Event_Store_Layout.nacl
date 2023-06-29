@@ -113,6 +113,10 @@ salesforce.Layout ApiAnomalyEventStore_API_Anomaly_Event_Store_Layout@bssss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

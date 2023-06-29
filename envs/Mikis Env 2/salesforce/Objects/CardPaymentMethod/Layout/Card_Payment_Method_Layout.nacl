@@ -149,6 +149,10 @@ salesforce.Layout CardPaymentMethod_Card_Payment_Method_Layout@bsss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

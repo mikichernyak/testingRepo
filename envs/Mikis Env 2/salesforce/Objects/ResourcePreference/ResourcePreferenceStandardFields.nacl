@@ -85,19 +85,21 @@ type salesforce.ResourcePreference {
     queryable = true
     trackHistory = false
   }
-  salesforce.Lookup RelatedRecordId {
+  salesforce.MasterDetail RelatedRecordId {
     apiName = "ResourcePreference.RelatedRecordId"
-    label = "Related Record ID"
-    _required = true
+    relationshipName = "RelatedRecord"
     referenceTo = [
       salesforce.Account,
+      salesforce.Asset,
+      salesforce.Location,
       salesforce.WorkOrder,
+      salesforce.WorkOrderLineItem,
     ]
+    _required = true
+    label = "Related Record ID"
     createable = true
     updateable = false
-    relationshipName = "RelatedRecord"
     queryable = true
-    trackHistory = false
   }
   salesforce.Picklist PreferenceType {
     apiName = "ResourcePreference.PreferenceType"

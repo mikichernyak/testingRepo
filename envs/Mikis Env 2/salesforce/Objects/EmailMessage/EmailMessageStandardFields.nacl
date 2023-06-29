@@ -307,18 +307,22 @@ type salesforce.EmailMessage {
     label = "Related To ID"
     referenceTo = [
       salesforce.Account,
+      salesforce.AppointmentInvitation,
       salesforce.Asset,
       salesforce.AssetRelationship,
       salesforce.AssignedResource,
       salesforce.Campaign,
       salesforce.Case,
+      salesforce.ChangeRequest,
       salesforce.CommSubscriptionConsent,
       salesforce.ContactRequest,
       salesforce.Contract,
       salesforce.ContractLineItem,
+      salesforce.Coupon,
       salesforce.CreditMemo,
       salesforce.Entitlement,
       salesforce.Image,
+      salesforce.Incident,
       salesforce.Invoice,
       salesforce.LegalEntity,
       "ListEmail",
@@ -327,8 +331,16 @@ type salesforce.EmailMessage {
       salesforce.Opportunity,
       salesforce.Order,
       salesforce.PartyConsent,
+      salesforce.Problem,
       salesforce.ProcessException,
       salesforce.Product2,
+      salesforce.Promotion,
+      salesforce.PromotionMarketSegment,
+      salesforce.PromotionQualifier,
+      salesforce.PromotionSegment,
+      salesforce.PromotionSegmentSalesStore,
+      salesforce.PromotionTarget,
+      salesforce.PromotionTier,
       salesforce.ResourceAbsence,
       salesforce.ReturnOrder,
       salesforce.ReturnOrderLineItem,
@@ -402,16 +414,38 @@ type salesforce.EmailMessage {
   }
   salesforce.Unknown IsPrivateDraft {
     apiName = "EmailMessage.IsPrivateDraft"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown MessageSize {
     apiName = "EmailMessage.MessageSize"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "EmailMessage.Name"
+    length = 255
+    _required = true
+    label = "Email Message Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text ClientThreadIdentifier {
+    apiName = "EmailMessage.ClientThreadIdentifier"
+    length = 765
+    label = "Client Thread ID"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
   }
 }

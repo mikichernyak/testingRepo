@@ -15,11 +15,11 @@ salesforce.Layout AppointmentInvitation_Appointment_Invitation_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = "BookingStartDate"
+              field = salesforce.AppointmentInvitation.field.BookingStartDate
             },
             {
               behavior = "Edit"
-              field = "BookingEndDate"
+              field = salesforce.AppointmentInvitation.field.BookingEndDate
             },
             {
               behavior = "Edit"
@@ -35,23 +35,23 @@ salesforce.Layout AppointmentInvitation_Appointment_Invitation_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = "InvitationNumber"
+              field = salesforce.AppointmentInvitation.field.InvitationNumber
             },
             {
               behavior = "Edit"
-              field = "InvitationIdentifier"
+              field = salesforce.AppointmentInvitation.field.InvitationIdentifier
             },
             {
               behavior = "Edit"
-              field = "InvitationUrl"
+              field = salesforce.AppointmentInvitation.field.InvitationUrl
             },
             {
               behavior = "Edit"
-              field = "UrlExpiryDate"
+              field = salesforce.AppointmentInvitation.field.UrlExpiryDate
             },
             {
               behavior = "Edit"
-              field = "IsActive"
+              field = salesforce.AppointmentInvitation.field.IsActive
             },
           ]
         },
@@ -68,7 +68,7 @@ salesforce.Layout AppointmentInvitation_Appointment_Invitation_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = "CreatedById"
+              field = salesforce.AppointmentInvitation.field.CreatedById
             },
           ]
         },
@@ -76,7 +76,7 @@ salesforce.Layout AppointmentInvitation_Appointment_Invitation_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = "LastModifiedById"
+              field = salesforce.AppointmentInvitation.field.LastModifiedById
             },
           ]
         },

@@ -217,33 +217,81 @@ type salesforce.Contract {
     valueSet = [
       {
         fullName = "Draft"
-        default = false
-        label = "Draft"
         isActive = true
+        label = "Draft"
+        default = false
       },
       {
         fullName = "InApproval"
-        default = false
-        label = "In Approval Process"
         isActive = true
+        label = "In Approval Process"
+        default = false
       },
       {
         fullName = "Activated"
-        default = false
-        label = "Activated"
         isActive = true
+        label = "Activated"
+        default = false
       },
       {
         fullName = "Terminated"
-        default = false
-        label = "Terminated"
         isActive = true
+        label = "Terminated"
+        default = false
       },
       {
         fullName = "Expired"
-        default = false
-        label = "Expired"
         isActive = true
+        label = "Expired"
+        default = false
+      },
+      {
+        fullName = "Rejected"
+        isActive = true
+        label = "Rejected"
+        default = false
+      },
+      {
+        fullName = "Negotiating"
+        isActive = true
+        label = "Negotiating"
+        default = false
+      },
+      {
+        fullName = "AwaitingSignature"
+        isActive = true
+        label = "Awaiting Signature"
+        default = false
+      },
+      {
+        fullName = "SignatureDeclined"
+        isActive = true
+        label = "Signature Declined"
+        default = false
+      },
+      {
+        fullName = "Signed"
+        isActive = true
+        label = "Signed"
+        default = false
+      },
+      {
+        fullName = "Cancelled"
+        isActive = true
+        label = "Canceled"
+        default = false
+      },
+      {
+        fullName = "Expired2"
+        isActive = true
+        label = "Contract Expired"
+        default = false
+      },
+      {
+        fullName = "Terminated2"
+        isActive = true
+        label = "Contract Terminated"
+        default = false
       },
     ]
     restricted = true
@@ -344,17 +392,17 @@ type salesforce.Contract {
   salesforce.Unknown Name {
     apiName = "Contract.Name"
     trackHistory = true
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ShippingAddress {
     apiName = "Contract.ShippingAddress"
     trackHistory = true
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

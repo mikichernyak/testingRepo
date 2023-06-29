@@ -150,6 +150,10 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

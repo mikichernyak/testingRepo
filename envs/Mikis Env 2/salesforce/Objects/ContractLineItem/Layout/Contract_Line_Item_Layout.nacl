@@ -101,6 +101,8 @@ salesforce.Layout ContractLineItem_Contract_Line_Item_Layout@bsss {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsTopToBottom"
     },

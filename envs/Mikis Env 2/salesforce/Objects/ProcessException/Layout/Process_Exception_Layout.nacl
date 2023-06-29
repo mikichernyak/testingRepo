@@ -67,6 +67,10 @@ salesforce.Layout ProcessException_Process_Exception_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

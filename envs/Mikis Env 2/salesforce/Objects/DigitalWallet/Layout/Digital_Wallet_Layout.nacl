@@ -97,6 +97,10 @@ salesforce.Layout DigitalWallet_Digital_Wallet_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

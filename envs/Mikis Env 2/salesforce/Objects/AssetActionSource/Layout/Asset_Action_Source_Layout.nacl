@@ -112,6 +112,10 @@ salesforce.Layout AssetActionSource_Asset_Action_Source_Layout@bsss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

@@ -72,18 +72,17 @@ type salesforce.ResourceAbsence {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ResourceId {
+  salesforce.MasterDetail ResourceId {
     apiName = "ResourceAbsence.ResourceId"
-    label = "Resource ID"
-    _required = true
+    relationshipName = "Resource"
     referenceTo = [
       salesforce.ServiceResource,
     ]
+    _required = true
+    label = "Resource ID"
     createable = true
     updateable = false
-    relationshipName = "Resource"
     queryable = true
-    trackHistory = false
   }
   salesforce.Picklist Type {
     apiName = "ResourceAbsence.Type"

@@ -129,6 +129,10 @@ salesforce.Layout SessionHijackingEventStore_Session_Hijacking_Event_Store_Layou
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

@@ -38,15 +38,15 @@ type salesforce.Account {
     trackFeedHistory = false
     valueSetName = salesforce.StandardValueSet.instance.AccountType
   }
-  salesforce.Lookup ParentId {
+  salesforce.Hierarchy ParentId {
     apiName = "Account.ParentId"
-    label = "Parent Account ID"
+    relationshipName = "Parent"
     referenceTo = [
       salesforce.Account,
     ]
+    label = "Parent Account ID"
     createable = true
     updateable = true
-    relationshipName = "Parent"
     queryable = true
   }
   salesforce.Address BillingAddress {
@@ -433,19 +433,22 @@ type salesforce.Account {
     queryable = true
     trackFeedHistory = false
   }
-  salesforce.Unknown Name {
+  salesforce.Text Name {
     apiName = "Account.Name"
-    trackFeedHistory = true
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    length = 255
+    _required = true
+    label = "Account Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
   }
   salesforce.Unknown Tier {
     apiName = "Account.Tier"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

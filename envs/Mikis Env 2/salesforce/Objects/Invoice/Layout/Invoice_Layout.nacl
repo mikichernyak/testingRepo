@@ -84,6 +84,8 @@ salesforce.Layout Invoice_Invoice_Layout@bs {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsLeftToRight"
     },
@@ -125,6 +127,10 @@ salesforce.Layout Invoice_Invoice_Layout@bs {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

@@ -55,6 +55,10 @@ salesforce.Layout ReturnOrderItemTax_Return_Order_Item_Tax_Layout@bssss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

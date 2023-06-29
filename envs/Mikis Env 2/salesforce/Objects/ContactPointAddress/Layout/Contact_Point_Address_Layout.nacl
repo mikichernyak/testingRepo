@@ -43,6 +43,10 @@ salesforce.Layout ContactPointAddress_Contact_Point_Address_Layout@bsss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

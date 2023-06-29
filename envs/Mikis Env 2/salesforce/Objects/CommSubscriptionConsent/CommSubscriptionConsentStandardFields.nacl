@@ -166,26 +166,118 @@ type salesforce.CommSubscriptionConsent {
   salesforce.Lookup BusinessBrandId {
     apiName = "CommSubscriptionConsent.BusinessBrandId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    queryable = true
+    updateable = true
+    createable = true
+    
+    label = "Business Brand ID"
+    referenceTo = [
+      salesforce.BusinessBrand,
+    ]
+    relationshipName = "BusinessBrand"
   }
   salesforce.Unknown EffectiveToDate {
     apiName = "CommSubscriptionConsent.EffectiveToDate"
     inlineHelpText = "Date when consent ends."
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup PartyRoleId {
     apiName = "CommSubscriptionConsent.PartyRoleId"
     trackHistory = false
-    queryable = false
-    updateable = false
+    queryable = true
+    updateable = true
+    createable = true
+    
+    label = "Party Role ID"
+    referenceTo = [
+      salesforce.Customer,
+      salesforce.Seller,
+    ]
+    relationshipName = "PartyRole"
+  }
+  salesforce.Picklist PrivacyConsentStatus {
+    apiName = "CommSubscriptionConsent.PrivacyConsentStatus"
+    valueSet = [
+      {
+        fullName = "NotSeen"
+        isActive = true
+        label = "Not Seen"
+        default = true
+      },
+      {
+        fullName = "Seen"
+        isActive = true
+        label = "Seen"
+        default = false
+      },
+      {
+        fullName = "OptIn"
+        isActive = true
+        label = "Opt In"
+        default = false
+      },
+      {
+        fullName = "OptOut"
+        isActive = true
+        label = "Opt Out"
+        default = false
+      },
+      {
+        fullName = "OptInPending"
+        isActive = true
+        label = "Opt In Pending"
+        default = false
+      },
+      {
+        fullName = "OptOutPending"
+        isActive = true
+        label = "Opt Out Pending"
+        default = false
+      },
+    ]
+    restricted = true
+    _required = true
+    label = "Privacy Consent Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup DataUsePurposeId {
+    apiName = "CommSubscriptionConsent.DataUsePurposeId"
+    relationshipName = "DataUsePurpose"
+    referenceTo = [
+      salesforce.DataUsePurpose,
+    ]
+    label = "Data Use Purpose ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup EngagementChannelTypeId {
+    apiName = "CommSubscriptionConsent.EngagementChannelTypeId"
+    relationshipName = "EngagementChannelType"
+    referenceTo = [
+      salesforce.EngagementChannelType,
+    ]
+    label = "Engagement Channel Type ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup PartyId {
+    apiName = "CommSubscriptionConsent.PartyId"
+    relationshipName = "Party"
+    referenceTo = [
+      salesforce.Individual,
+    ]
+    label = "Individual ID"
     createable = false
+    updateable = false
+    queryable = true
     _hidden_value = true
   }
 }

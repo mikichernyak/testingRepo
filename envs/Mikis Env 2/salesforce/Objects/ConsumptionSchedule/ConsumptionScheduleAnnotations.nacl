@@ -189,4 +189,6 @@ type salesforce.ConsumptionSchedule {
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
   externalSharingModel = "Private"
+  searchLayouts = {
+  }
 }

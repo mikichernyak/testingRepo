@@ -109,88 +109,118 @@ type salesforce.WorkStepTemplate {
     label = "Action Definition"
     valueSet = [
       {
-        fullName = "setup_service_experience__Create_Case"
-        default = false
-        label = "Create a Case"
+        fullName = "cms_orch__CMS_NotifyRequester"
         isActive = true
+        label = "CMS: Notify Content Author"
+        default = false
+      },
+      {
+        fullName = "cms_orch__CMS_ReviewContent"
+        isActive = true
+        label = "CMS: Review Content"
+        default = false
+      },
+      {
+        fullName = "cms_orch__CMS_ReviseContent"
+        isActive = true
+        label = "CMS: Submit Content for Review"
+        default = false
+      },
+      {
+        fullName = "cms_orch__CMS_WithdrawReviewRequest"
+        isActive = true
+        label = "CMS: Withdraw Review Request"
+        default = false
+      },
+      {
+        fullName = "runtime_industries_epc__SimpleProduct"
+        isActive = true
+        label = "Simple Product Default Template"
+        default = false
+      },
+      {
+        fullName = "setup_service_experience__Create_Case"
+        isActive = true
+        label = "Create a Case"
+        default = false
       },
       {
         fullName = "setup_service_experience__Reset_Pwd"
-        default = false
-        label = "Reset Password"
         isActive = true
+        label = "Reset Password"
+        default = false
       },
       {
         fullName = "setup_service_experience__Verify_Cust"
-        default = false
-        label = "Verify Identity"
         isActive = true
+        label = "Verify Identity"
+        default = false
       },
       {
         fullName = "SendEmail"
-        default = false
-        label = "Email"
         isActive = true
+        label = "Email"
+        default = false
       },
       {
         fullName = "LogACall"
-        default = false
-        label = "Log a Call"
         isActive = true
+        label = "Log a Call"
+        default = false
       },
       {
         fullName = "NewAccount"
-        default = false
-        label = "New Account"
         isActive = true
+        label = "New Account"
+        default = false
       },
       {
         fullName = "NewCase"
-        default = false
-        label = "New Case"
         isActive = true
+        label = "New Case"
+        default = false
       },
       {
         fullName = "NewContact"
-        default = false
-        label = "New Contact"
         isActive = true
+        label = "New Contact"
+        default = false
       },
       {
         fullName = "NewEvent"
-        default = false
-        label = "New Event"
         isActive = true
+        label = "New Event"
+        default = false
       },
       {
         fullName = "NewGroup"
-        default = false
-        label = "New Group"
         isActive = true
+        label = "New Group"
+        default = false
       },
       {
         fullName = "NewLead"
-        default = false
-        label = "New Lead"
         isActive = true
+        label = "New Lead"
+        default = false
       },
       {
         fullName = "NewNote"
-        default = false
-        label = "New Note"
         isActive = true
+        label = "New Note"
+        default = false
       },
       {
         fullName = "NewOpportunity"
-        default = false
-        label = "New Opportunity"
         isActive = true
+        label = "New Opportunity"
+        default = false
       },
       {
         fullName = "NewTask"
-        default = false
-        label = "New Task"
         isActive = true
+        label = "New Task"
+        default = false
       },
     ]
     restricted = true

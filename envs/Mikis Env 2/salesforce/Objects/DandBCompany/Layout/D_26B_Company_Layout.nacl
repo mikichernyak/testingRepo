@@ -391,6 +391,10 @@ salesforce.Layout DandBCompany_D_26B_Company_Layout@bpss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   miniLayout = {

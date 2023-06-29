@@ -395,25 +395,33 @@ type salesforce.Contact {
   salesforce.Unknown DoNotCall {
     apiName = "Contact.DoNotCall"
     trackFeedHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown HasOptedOutOfEmail {
     apiName = "Contact.HasOptedOutOfEmail"
     trackFeedHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown HasOptedOutOfFax {
     apiName = "Contact.HasOptedOutOfFax"
     trackFeedHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Picklist GenderIdentity {
+    apiName = "Contact.GenderIdentity"
+    _hidden_value = true
+  }
+  salesforce.Picklist Pronouns {
+    apiName = "Contact.Pronouns"
     _hidden_value = true
   }
 }

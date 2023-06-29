@@ -366,31 +366,31 @@ type salesforce.Order {
   }
   salesforce.Unknown AccountNumber {
     apiName = "Order.AccountNumber"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ContractEndDate {
     apiName = "Order.ContractEndDate"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ContractName {
     apiName = "Order.ContractName"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup OpportunityId {
     apiName = "Order.OpportunityId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

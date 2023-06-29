@@ -290,4 +290,14 @@ type salesforce.WorkType {
     queryable = true
     trackHistory = false
   }
+  salesforce.Number ApptStartTimeIntvlInMin {
+    apiName = "WorkType.ApptStartTimeIntvlInMin"
+    label = "Appointment Start Time Interval (Min)"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
 }

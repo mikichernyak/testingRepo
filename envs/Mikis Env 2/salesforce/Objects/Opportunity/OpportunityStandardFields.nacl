@@ -36,6 +36,7 @@ type salesforce.Opportunity {
     createable = true
     updateable = true
     queryable = true
+    trackTrending = false
   }
   salesforce.Text Name {
     apiName = "Opportunity.Name"
@@ -47,6 +48,7 @@ type salesforce.Opportunity {
     caseSensitive = false
     length = 120
     queryable = true
+    trackTrending = false
   }
   salesforce.LongTextArea Description {
     apiName = "Opportunity.Description"
@@ -55,6 +57,7 @@ type salesforce.Opportunity {
     updateable = true
     length = 32000
     queryable = true
+    trackTrending = false
   }
   salesforce.Picklist StageName {
     apiName = "Opportunity.StageName"
@@ -76,6 +79,7 @@ type salesforce.Opportunity {
     scale = 2
     precision = 18
     queryable = true
+    trackTrending = false
   }
   salesforce.Percent Probability {
     apiName = "Opportunity.Probability"
@@ -85,6 +89,7 @@ type salesforce.Opportunity {
     scale = 0
     precision = 3
     queryable = true
+    trackTrending = false
   }
   salesforce.Currency ExpectedRevenue {
     apiName = "Opportunity.ExpectedRevenue"
@@ -95,6 +100,7 @@ type salesforce.Opportunity {
     precision = 18
     queryable = true
     _hidden_value = true
+    trackTrending = false
   }
   salesforce.Number TotalOpportunityQuantity {
     apiName = "Opportunity.TotalOpportunityQuantity"
@@ -105,6 +111,7 @@ type salesforce.Opportunity {
     updateable = true
     unique = false
     queryable = true
+    trackTrending = false
   }
   salesforce.Date CloseDate {
     apiName = "Opportunity.CloseDate"
@@ -113,6 +120,7 @@ type salesforce.Opportunity {
     createable = true
     updateable = true
     queryable = true
+    trackTrending = false
   }
   salesforce.Picklist Type {
     apiName = "Opportunity.Type"
@@ -134,6 +142,7 @@ type salesforce.Opportunity {
     caseSensitive = false
     length = 255
     queryable = true
+    trackTrending = false
   }
   salesforce.Picklist LeadSource {
     apiName = "Opportunity.LeadSource"
@@ -423,16 +432,35 @@ type salesforce.Opportunity {
     apiName = "Opportunity.ContractId"
     trackFeedHistory = false
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown IqScore {
     apiName = "Opportunity.IqScore"
-    queryable = false
-    updateable = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Number PushCount {
+    apiName = "Opportunity.PushCount"
+    label = "Push Count"
+    precision = 9
     createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastStageChangeDate {
+    apiName = "Opportunity.LastStageChangeDate"
+    label = "Last Stage Change Date"
+    createable = false
+    updateable = false
+    queryable = true
     _hidden_value = true
   }
 }

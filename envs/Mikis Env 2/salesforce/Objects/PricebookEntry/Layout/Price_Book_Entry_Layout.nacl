@@ -59,6 +59,10 @@ salesforce.Layout PricebookEntry_Price_Book_Entry_Layout@bsss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   multilineLayoutFields = [

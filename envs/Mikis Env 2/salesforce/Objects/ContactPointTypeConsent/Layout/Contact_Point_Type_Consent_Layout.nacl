@@ -79,6 +79,10 @@ salesforce.Layout ContactPointTypeConsent_Contact_Point_Type_Consent_Layout@bsss
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

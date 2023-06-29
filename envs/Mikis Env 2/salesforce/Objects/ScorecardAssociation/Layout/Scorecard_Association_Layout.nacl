@@ -19,6 +19,8 @@ salesforce.Layout ScorecardAssociation_Scorecard_Association_Layout@bss {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsLeftToRight"
     },

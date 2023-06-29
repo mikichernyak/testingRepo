@@ -23,6 +23,8 @@ salesforce.QuickAction CollaborationGroup_NewGroupMember@v {
           },
         ]
       },
+      {
+      },
     ]
   }
   standardLabel = "AddMember"

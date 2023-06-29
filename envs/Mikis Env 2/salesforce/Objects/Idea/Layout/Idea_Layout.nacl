@@ -7,12 +7,20 @@ salesforce.Layout Idea_Idea_Layout@bs {
       editHeading = true
       label = "Additional Information"
       style = "OneColumn"
+      layoutColumns = [
+        {
+        },
+      ]
     },
     {
       customLabel = false
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

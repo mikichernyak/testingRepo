@@ -2,26 +2,134 @@ type salesforce.AppointmentTopicTimeSlot {
   salesforce.Lookup OperatingHoursId {
     apiName = "AppointmentTopicTimeSlot.OperatingHoursId"
     _hidden_value = true
+    label = "Operating Hour ID"
+    referenceTo = [
+      salesforce.OperatingHours,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "OperatingHours"
+    queryable = true
   }
   salesforce.Lookup TimeSlotId {
     apiName = "AppointmentTopicTimeSlot.TimeSlotId"
     trackHistory = false
-    _hidden_value = true
+    
+    label = "Time Slot ID"
+    _required = true
+    referenceTo = [
+      salesforce.TimeSlot,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "TimeSlot"
+    queryable = true
   }
   salesforce.Lookup WorkTypeGroupId {
     apiName = "AppointmentTopicTimeSlot.WorkTypeGroupId"
     trackHistory = false
-    _hidden_value = true
+    
+    label = "Work Type Group ID"
+    referenceTo = [
+      salesforce.WorkTypeGroup,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "WorkTypeGroup"
+    queryable = true
   }
   salesforce.Lookup WorkTypeId {
     apiName = "AppointmentTopicTimeSlot.WorkTypeId"
     trackHistory = false
+    
+    label = "Work Type ID"
+    referenceTo = [
+      salesforce.WorkType,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "WorkType"
+    queryable = true
+  }
+  salesforce.Text AppointmentTopicTimeSlotKey {
+    apiName = "AppointmentTopicTimeSlot.AppointmentTopicTimeSlotKey"
+    label = "Appointment Topic Time Slot Key"
+    createable = true
+    updateable = true
+    unique = true
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "AppointmentTopicTimeSlot.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
     _hidden_value = true
   }
-  string AppointmentTopicTimeSlotKey {
+  serviceid Id {
+    apiName = "AppointmentTopicTimeSlot.Id"
+    label = "Appointment Topic Time Slot ID"
+    queryable = true
     _hidden_value = true
   }
-  string Name {
+  salesforce.Checkbox IsDeleted {
+    apiName = "AppointmentTopicTimeSlot.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AppointmentTopicTimeSlot.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AppointmentTopicTimeSlot.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AppointmentTopicTimeSlot.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AppointmentTopicTimeSlot.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AppointmentTopicTimeSlot.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
     _hidden_value = true
   }
 }

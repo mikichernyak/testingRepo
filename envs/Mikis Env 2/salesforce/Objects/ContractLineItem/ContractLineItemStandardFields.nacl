@@ -72,18 +72,17 @@ type salesforce.ContractLineItem {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ServiceContractId {
+  salesforce.MasterDetail ServiceContractId {
     apiName = "ContractLineItem.ServiceContractId"
-    label = "Service Contract ID"
-    _required = true
+    relationshipName = "ServiceContract"
     referenceTo = [
       salesforce.ServiceContract,
     ]
+    _required = true
+    label = "Service Contract ID"
     createable = true
     updateable = false
-    relationshipName = "ServiceContract"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup Product2Id {
     apiName = "ContractLineItem.Product2Id"
@@ -261,17 +260,22 @@ type salesforce.ContractLineItem {
   salesforce.Lookup LocationId {
     apiName = "ContractLineItem.LocationId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
+    queryable = true
+    updateable = true
+    createable = true
+    
+    label = "Location ID"
+    referenceTo = [
+      salesforce.Location,
+    ]
+    relationshipName = "Location"
   }
   salesforce.Unknown StatusIndicator {
     apiName = "ContractLineItem.StatusIndicator"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

@@ -275,25 +275,29 @@ type salesforce.MessagingEndUser {
   salesforce.Lookup AccountId {
     apiName = "MessagingEndUser.AccountId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup ContactId {
     apiName = "MessagingEndUser.ContactId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown HasInitialResponseSent {
     apiName = "MessagingEndUser.HasInitialResponseSent"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Lookup LeadId {
+    apiName = "MessagingEndUser.LeadId"
     _hidden_value = true
   }
 }

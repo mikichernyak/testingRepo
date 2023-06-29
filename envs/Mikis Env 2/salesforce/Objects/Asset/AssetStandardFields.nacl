@@ -354,94 +354,96 @@ type salesforce.Asset {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Unknown Address {
+  salesforce.Address Address {
     apiName = "Asset.Address"
-    trackHistory = false
-    queryable = false
-    updateable = false
+    label = "Address"
     createable = false
+    updateable = false
+    queryable = true
     _hidden_value = true
   }
   salesforce.Picklist ConsequenceOfFailure {
     apiName = "Asset.ConsequenceOfFailure"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Picklist DigitalAssetStatus {
     apiName = "Asset.DigitalAssetStatus"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ExternalIdentifier {
     apiName = "Asset.ExternalIdentifier"
     inlineHelpText = "ID of matching record in an external system."
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup LocationId {
     apiName = "Asset.LocationId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ManufactureDate {
     apiName = "Asset.ManufactureDate"
     inlineHelpText = "Date when the asset was manufactured."
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ProductDescription {
     apiName = "Asset.ProductDescription"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Picklist ProductFamily {
     apiName = "Asset.ProductFamily"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Picklist StatusReason {
     apiName = "Asset.StatusReason"
     inlineHelpText = "Explanation of the device status."
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
-  salesforce.Unknown TotalLifecycleAmount {
+  salesforce.Currency TotalLifecycleAmount {
     apiName = "Asset.TotalLifecycleAmount"
-    trackHistory = false
-    queryable = false
-    updateable = false
+    label = "Total Lifecycle Amount"
     createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
     _hidden_value = true
   }
   salesforce.Unknown Uuid {
     apiName = "Asset.Uuid"
     inlineHelpText = "Unique string identifying the asset."
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

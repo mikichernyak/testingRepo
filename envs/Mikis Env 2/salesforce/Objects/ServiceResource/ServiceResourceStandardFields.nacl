@@ -178,4 +178,12 @@ type salesforce.ServiceResource {
     queryable = true
     trackHistory = false
   }
+  salesforce.Checkbox IsPrimary {
+    apiName = "ServiceResource.IsPrimary"
+    defaultValue = false
+    label = "Main"
+    createable = true
+    updateable = true
+    queryable = true
+  }
 }

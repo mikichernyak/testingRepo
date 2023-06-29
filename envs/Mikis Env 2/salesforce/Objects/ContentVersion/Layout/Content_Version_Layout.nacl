@@ -18,6 +18,8 @@ salesforce.Layout ContentVersion_Content_Version_Layout@bss {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsLeftToRight"
     },
@@ -26,6 +28,10 @@ salesforce.Layout ContentVersion_Content_Version_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   miniLayout = {

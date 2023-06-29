@@ -440,40 +440,48 @@ type salesforce.Lead {
   }
   salesforce.Lookup CampaignId {
     apiName = "Lead.CampaignId"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown DoNotCall {
     apiName = "Lead.DoNotCall"
     trackFeedHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown HasOptedOutOfEmail {
     apiName = "Lead.HasOptedOutOfEmail"
     trackFeedHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown HasOptedOutOfFax {
     apiName = "Lead.HasOptedOutOfFax"
     trackFeedHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown LastTransferDate {
     apiName = "Lead.LastTransferDate"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Picklist GenderIdentity {
+    apiName = "Lead.GenderIdentity"
+    _hidden_value = true
+  }
+  salesforce.Picklist Pronouns {
+    apiName = "Lead.Pronouns"
     _hidden_value = true
   }
 }

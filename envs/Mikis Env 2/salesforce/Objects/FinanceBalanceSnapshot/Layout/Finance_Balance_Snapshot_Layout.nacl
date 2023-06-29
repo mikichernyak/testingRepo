@@ -195,6 +195,10 @@ salesforce.Layout FinanceBalanceSnapshot_Finance_Balance_Snapshot_Layout@bsss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

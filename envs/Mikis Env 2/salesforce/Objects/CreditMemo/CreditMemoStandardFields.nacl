@@ -174,27 +174,39 @@ type salesforce.CreditMemo {
     valueSet = [
       {
         fullName = "Draft"
-        default = false
-        label = "Draft"
         isActive = true
+        label = "Draft"
+        default = false
       },
       {
         fullName = "Pending"
-        default = false
-        label = "Pending"
         isActive = true
+        label = "Pending"
+        default = false
       },
       {
         fullName = "Posted"
-        default = false
-        label = "Posted"
         isActive = true
+        label = "Posted"
+        default = false
       },
       {
         fullName = "Canceled"
-        default = false
-        label = "Canceled"
         isActive = true
+        label = "Canceled"
+        default = false
+      },
+      {
+        fullName = "Error"
+        isActive = true
+        label = "Error"
+        default = false
+      },
+      {
+        fullName = "Voided"
+        isActive = true
+        label = "Voided"
+        default = false
       },
     ]
     restricted = true
@@ -264,36 +276,91 @@ type salesforce.CreditMemo {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Unknown AppType {
-    apiName = "CreditMemo.AppType"
-    trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
-    _hidden_value = true
-  }
-  salesforce.Unknown CreationMode {
+  
+  salesforce.Picklist CreationMode {
     apiName = "CreditMemo.CreationMode"
-    trackHistory = false
-    queryable = false
-    updateable = false
+    label = "Creation Mode"
+    valueSet = [
+      {
+        fullName = "Salesforce"
+        default = false
+        label = "Salesforce"
+        isActive = true
+      },
+      {
+        fullName = "External"
+        default = false
+        label = "External"
+        isActive = true
+      },
+    ]
+    restricted = true
     createable = false
+    updateable = false
+    queryable = true
     _hidden_value = true
   }
-  salesforce.Unknown ExternalReference {
+  salesforce.Text ExternalReference {
     apiName = "CreditMemo.ExternalReference"
-    trackHistory = false
-    queryable = false
-    updateable = false
+    label = "External Reference"
     createable = false
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Text ExternalReferenceDataSource {
+    apiName = "CreditMemo.ExternalReferenceDataSource"
+    label = "External Reference Data Source"
+    createable = false
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Lookup ReferenceEntityId {
+    apiName = "CreditMemo.ReferenceEntityId"
+    label = "ReferenceEntity ID"
+    referenceTo = [
+      salesforce.Invoice,
+      salesforce.Order,
+    ]
+    createable = false
+    updateable = true
+    relationshipName = "ReferenceEntity"
+    queryable = true
+  }
+  salesforce.Summary NetCreditsApplied {
+    apiName = "CreditMemo.NetCreditsApplied"
+    inlineHelpText = "Net amount applied from the credit memo."
+    label = "Net Credits Applied"
+    createable = false
+    updateable = false
+    queryable = true
     _hidden_value = true
   }
-  salesforce.Unknown ExternalReferenceDataSource {
-    apiName = "CreditMemo.ExternalReferenceDataSource"
-    trackHistory = false
-    queryable = false
-    updateable = false
+  salesforce.Currency TotalCreditAmountApplied {
+    apiName = "CreditMemo.TotalCreditAmountApplied"
+    inlineHelpText = "Amount applied from the credit memo to invoices."
+    label = "Total Credit Amount Applied"
     createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalCreditAmountUnapplied {
+    apiName = "CreditMemo.TotalCreditAmountUnapplied"
+    inlineHelpText = "Amount unapplied from invoices and returned to the credit memo."
+    label = "Total Credit Amount Unapplied"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
     _hidden_value = true
   }
 }

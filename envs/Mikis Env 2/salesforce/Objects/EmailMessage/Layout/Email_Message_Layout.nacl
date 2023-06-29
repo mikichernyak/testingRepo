@@ -101,6 +101,10 @@ salesforce.Layout EmailMessage_Email_Message_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   platformActionList = {

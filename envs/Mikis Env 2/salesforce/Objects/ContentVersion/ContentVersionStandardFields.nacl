@@ -370,12 +370,18 @@ type salesforce.ContentVersion {
     referenceTo = [
       salesforce.Account,
       salesforce.ApiAnomalyEventStore,
+      salesforce.AppointmentInvitation,
+      salesforce.AppointmentTopicTimeSlot,
       salesforce.Asset,
       salesforce.AssetRelationship,
       salesforce.AssignedResource,
       salesforce.AuthorizationFormText,
       salesforce.Campaign,
       salesforce.Case,
+      salesforce.CaseRelatedIssue,
+      salesforce.ChangeRequest,
+      salesforce.ChangeRequestRelatedIssue,
+      salesforce.ChangeRequestRelatedItem,
       salesforce.CollaborationGroup,
       salesforce.CommSubscription,
       salesforce.CommSubscriptionChannelType,
@@ -387,6 +393,7 @@ type salesforce.ContentVersion {
       salesforce.Contract,
       salesforce.ContractLineItem,
       "ConversationEntry",
+      salesforce.Coupon,
       salesforce.CredentialStuffingEventStore,
       salesforce.CreditMemo,
       salesforce.CreditMemoInvApplication,
@@ -396,17 +403,21 @@ type salesforce.ContentVersion {
       salesforce.EmailMessage,
       "EmailTemplate",
       salesforce.EngagementChannelType,
+      salesforce.EngagementChannelWorkType,
       "EnhancedLetterhead",
       salesforce.Entitlement,
       salesforce.EntityMilestone,
       salesforce.Event,
       salesforce.Image,
+      salesforce.Incident,
+      salesforce.IncidentRelatedItem,
       salesforce.Invoice,
       salesforce.InvoiceLine,
       salesforce.Lead,
       salesforce.LegalEntity,
       "ListEmail",
       salesforce.Location,
+      salesforce.LocationGroup,
       salesforce.MessagingSession,
       salesforce.OperatingHours,
       salesforce.OperatingHoursHoliday,
@@ -416,7 +427,18 @@ type salesforce.ContentVersion {
       "Organization",
       "OutgoingEmail",
       salesforce.PartyConsent,
+      salesforce.Payment,
+      salesforce.Problem,
+      salesforce.ProblemIncident,
+      salesforce.ProblemRelatedItem,
       salesforce.Product2,
+      salesforce.Promotion,
+      salesforce.PromotionMarketSegment,
+      salesforce.PromotionQualifier,
+      salesforce.PromotionSegment,
+      salesforce.PromotionSegmentSalesStore,
+      salesforce.PromotionTarget,
+      salesforce.PromotionTier,
       "Report",
       salesforce.ReportAnomalyEventStore,
       salesforce.ResourceAbsence,
@@ -432,6 +454,8 @@ type salesforce.ContentVersion {
       salesforce.ServiceTerritoryWorkType,
       salesforce.SessionHijackingEventStore,
       salesforce.Shift,
+      salesforce.ShiftEngagementChannel,
+      salesforce.ShiftWorkTopic,
       salesforce.Site,
       salesforce.SkillRequirement,
       salesforce.Solution,
@@ -579,9 +603,20 @@ type salesforce.ContentVersion {
   salesforce.Unknown Language {
     apiName = "ContentVersion.Language"
     trackHistory = false
-    queryable = false
-    updateable = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Text VersionDataUrl {
+    apiName = "ContentVersion.VersionDataUrl"
+    length = 255
+    label = "Version Data URL"
     createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
     _hidden_value = true
   }
 }

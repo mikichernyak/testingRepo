@@ -43,6 +43,10 @@ salesforce.Layout LegalEntity_Legal_Entity_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

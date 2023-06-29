@@ -51,6 +51,10 @@ salesforce.Layout DuplicateRecordSet_Duplicate_Record_Set_Layout@bsss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

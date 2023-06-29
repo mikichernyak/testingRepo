@@ -55,6 +55,10 @@ salesforce.Layout AuthorizationFormConsent_Authorization_Form_Consent_Layout@bss
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

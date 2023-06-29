@@ -194,9 +194,9 @@ type salesforce.OrderItem {
   }
   salesforce.Unknown ProductCode {
     apiName = "OrderItem.ProductCode"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

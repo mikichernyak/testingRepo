@@ -219,4 +219,6 @@ type salesforce.Event {
   topicsForObjects = {
     enableTopics = true
   }
+  searchLayouts = {
+  }
 }

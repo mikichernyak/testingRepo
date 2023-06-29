@@ -72,18 +72,17 @@ type salesforce.AssetRelationship {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup AssetId {
+  salesforce.MasterDetail AssetId {
     apiName = "AssetRelationship.AssetId"
-    label = "Asset ID"
-    _required = true
+    relationshipName = "Asset"
     referenceTo = [
       salesforce.Asset,
     ]
+    _required = true
+    label = "Asset ID"
     createable = true
     updateable = false
-    relationshipName = "Asset"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup RelatedAssetId {
     apiName = "AssetRelationship.RelatedAssetId"

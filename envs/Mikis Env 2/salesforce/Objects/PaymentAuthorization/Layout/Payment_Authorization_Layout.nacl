@@ -76,6 +76,8 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsLeftToRight"
     },
@@ -178,6 +180,10 @@ salesforce.Layout PaymentAuthorization_Payment_Authorization_Layout@bss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

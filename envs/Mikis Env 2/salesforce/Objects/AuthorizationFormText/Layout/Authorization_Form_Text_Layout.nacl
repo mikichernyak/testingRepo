@@ -47,6 +47,10 @@ salesforce.Layout AuthorizationFormText_Authorization_Form_Text_Layout@bsss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

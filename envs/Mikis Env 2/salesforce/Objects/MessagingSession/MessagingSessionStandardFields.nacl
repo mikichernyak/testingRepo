@@ -515,25 +515,36 @@ type salesforce.MessagingSession {
   salesforce.Lookup CaseId {
     apiName = "MessagingSession.CaseId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup LeadId {
     apiName = "MessagingSession.LeadId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup OpportunityId {
     apiName = "MessagingSession.OpportunityId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
+  }
+  salesforce.Lookup ConversationId {
+    apiName = "MessagingSession.ConversationId"
+    relationshipName = "Conversation"
+    referenceTo = [
+      "Conversation",
+    ]
+    label = "Conversation ID"
+    createable = true
+    updateable = false
+    queryable = true
   }
 }

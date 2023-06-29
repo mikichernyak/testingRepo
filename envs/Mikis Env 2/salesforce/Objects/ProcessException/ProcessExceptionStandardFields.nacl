@@ -98,6 +98,8 @@ type salesforce.ProcessException {
       salesforce.PaymentAuthorization,
       salesforce.Refund,
       salesforce.ReturnOrder,
+      salesforce.WebCart,
+      salesforce.WebStore,
     ]
     createable = true
     updateable = true
@@ -198,33 +200,39 @@ type salesforce.ProcessException {
     valueSet = [
       {
         fullName = "Order Activation"
-        default = true
-        label = "Order Activation"
         isActive = true
+        label = "Order Activation"
+        default = true
       },
       {
         fullName = "Order Approval"
-        default = false
-        label = "Order Approval"
         isActive = true
+        label = "Order Approval"
+        default = false
       },
       {
         fullName = "Fulfillment"
-        default = false
-        label = "Fulfillment"
         isActive = true
+        label = "Fulfillment"
+        default = false
       },
       {
         fullName = "Payment"
-        default = false
-        label = "Payment"
         isActive = true
+        label = "Payment"
+        default = false
       },
       {
         fullName = "Invoicing"
-        default = false
-        label = "Invoicing"
         isActive = true
+        label = "Invoicing"
+        default = false
+      },
+      {
+        fullName = "Place Order"
+        isActive = true
+        label = "Place Order"
+        default = false
       },
     ]
     restricted = false

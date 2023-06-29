@@ -128,12 +128,11 @@ type salesforce.WorkTypeGroup {
     updateable = true
     queryable = true
   }
-  salesforce.MultiselectPicklist AdditionalInformation {
+  salesforce.Picklist AdditionalInformation {
     apiName = "WorkTypeGroup.AdditionalInformation"
     label = "Additional Information"
     createable = true
     updateable = true
     queryable = true
-    trackHistory = false
   }
 }

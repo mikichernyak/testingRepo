@@ -31,6 +31,8 @@ salesforce.Layout Solution_Solution_Layout@bs {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsTopToBottom"
     },
@@ -85,6 +87,10 @@ salesforce.Layout Solution_Solution_Layout@bs {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   relatedLists = [

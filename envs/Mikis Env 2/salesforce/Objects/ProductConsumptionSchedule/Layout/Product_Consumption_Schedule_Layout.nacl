@@ -56,6 +56,10 @@ salesforce.Layout ProductConsumptionSchedule_Product_Consumption_Schedule_Layout
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

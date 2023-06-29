@@ -182,6 +182,10 @@ salesforce.Layout Opportunity_Opportunity__28Sales_29_Layout@bspps {
             },
           ]
         },
+        {
+        },
+        {
+        },
       ]
       style = "CustomLinks"
     },

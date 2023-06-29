@@ -72,18 +72,17 @@ type salesforce.WorkOrderLineItem {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup WorkOrderId {
+  salesforce.MasterDetail WorkOrderId {
     apiName = "WorkOrderLineItem.WorkOrderId"
-    label = "Work Order ID"
-    _required = true
+    relationshipName = "WorkOrder"
     referenceTo = [
       salesforce.WorkOrder,
     ]
+    _required = true
+    label = "Work Order ID"
     createable = true
     updateable = false
-    relationshipName = "WorkOrder"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup ParentWorkOrderLineItemId {
     apiName = "WorkOrderLineItem.ParentWorkOrderLineItemId"

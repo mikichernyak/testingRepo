@@ -72,18 +72,17 @@ type salesforce.AssociatedLocation {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ParentRecordId {
+  salesforce.MasterDetail ParentRecordId {
     apiName = "AssociatedLocation.ParentRecordId"
-    label = "Account Name ID"
-    _required = true
+    relationshipName = "ParentRecord"
     referenceTo = [
       salesforce.Account,
     ]
+    _required = true
+    label = "Account Name ID"
     createable = true
     updateable = false
-    relationshipName = "ParentRecord"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup LocationId {
     apiName = "AssociatedLocation.LocationId"

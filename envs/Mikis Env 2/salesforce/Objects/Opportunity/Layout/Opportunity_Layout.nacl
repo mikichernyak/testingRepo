@@ -172,6 +172,10 @@ salesforce.Layout Opportunity_Opportunity_Layout@bs {
             },
           ]
         },
+        {
+        },
+        {
+        },
       ]
       style = "CustomLinks"
     },

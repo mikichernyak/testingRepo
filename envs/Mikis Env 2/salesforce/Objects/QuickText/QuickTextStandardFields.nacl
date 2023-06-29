@@ -92,7 +92,7 @@ type salesforce.QuickText {
   salesforce.LongTextArea Message {
     apiName = "QuickText.Message"
     label = "Message"
-    _required = true
+    
     createable = true
     updateable = true
     length = 4096
@@ -108,15 +108,14 @@ type salesforce.QuickText {
     trackHistory = false
     valueSetName = salesforce.StandardValueSet.instance.QuickTextCategory
   }
-  salesforce.MultiselectPicklist Channel {
+  salesforce.Picklist Channel {
     apiName = "QuickText.Channel"
-    label = "Channel"
     restricted = false
+    label = "Channel"
     visibleLines = 0
     createable = true
     updateable = true
     queryable = true
-    trackHistory = false
     valueSetName = salesforce.StandardValueSet.instance.QuickTextChannel
   }
   salesforce.Checkbox IsInsertable {

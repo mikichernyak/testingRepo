@@ -75,18 +75,17 @@ type salesforce.InvoiceLine {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup InvoiceId {
+  salesforce.MasterDetail InvoiceId {
     apiName = "InvoiceLine.InvoiceId"
-    label = "Invoice ID"
-    _required = true
+    relationshipName = "Invoice"
     referenceTo = [
       salesforce.Invoice,
     ]
+    _required = true
+    label = "Invoice ID"
     createable = false
     updateable = false
-    relationshipName = "Invoice"
     queryable = true
-    trackHistory = false
     _hidden_value = true
   }
   salesforce.Lookup ReferenceEntityItemId {

@@ -120,6 +120,10 @@ salesforce.Layout Task_Task_Layout@bs {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   quickActionList = {
